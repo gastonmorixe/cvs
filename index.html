@@ -10,9 +10,17 @@
 <link rel="stylesheet" href="/style.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdn.rawgit.com/jcampbell1/jquery-srcset-retina-polyfill/master/jquery.srcset.js"></script>
 <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.easing.1.3.js"></script>
 <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('img').srcset();
+});
+</script>
 
 <style>
 
@@ -509,7 +517,7 @@ a.symbol:before {
       <p>Programatic advertising network from scratch.</p>
       <p>With million hits dialy, I had to architect a custom realtime multi-dimensional analytics + ad engine.</p>
       <p><strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/audify.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/audify.png" srcset="/images/samples/audify@2x.png 2x"></p>
     </div></a>
   </article>
 
@@ -521,7 +529,7 @@ a.symbol:before {
       <p><strong>Full UI +  Branding</strong></p>
       <p><strong>Tech</strong> RubyOnRails + Mongo. Future iOS &amp; Android.</p>
 
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/fitclub.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/fitclub.png" srcset="/images/samples/fitclub@2x.png 2x"></p>
     </div>
   </article>
 
@@ -532,7 +540,7 @@ a.symbol:before {
       <p><strong>App UI/UX</strong></p>
       <p><strong>Tech</strong> Future iOS &amp; Android.</p>
 
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/gripper.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/gripper.png" srcset="/images/samples/gripper@2x.png 2x"></p>
     </div>
   </article>
 
@@ -548,7 +556,7 @@ a.symbol:before {
       <p><strong>Full UI + Branding</strong></p>
       <p><strong>Tech</strong> RubyAPI. iOS Dev + RestKit w/ CoreData + objc &amp; Swift mix.</p>
 
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/pepe.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/pepe.png" srcset="/images/samples/pepe@2x.png 2x"></p>
     </div>
   </article>
 
@@ -563,7 +571,7 @@ a.symbol:before {
       <p><strong>Full UI + Branding</strong></p>
       <p><strong>Tech</strong> Tech iOS + Android launched. More to come.</p>
 
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/musa.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/musa.png" srcset="/images/samples/musa@2x.png 2x"></p>
     </div></a>
   </article>
 
@@ -580,7 +588,7 @@ a.symbol:before {
       <br>Bitcoind + Ruby integration
       <br>Security Strategy</p>
 
-      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/cointrust.png"></p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/cointrust.png" srcset="/images/samples/cointrust@2x.png 2x"></p>
     </div>
   </article>
 
