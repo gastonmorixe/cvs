@@ -115,7 +115,33 @@ a.symbol:before {
     display: inline-block;
     float: left;
     margin: 15px;
+    position: relative;
   }
+
+
+  #aboutme article:before{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;  
+    content: " ";
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+  }
+
+  #aboutme:hover article:before{
+    opacity: 0.1;
+  }
+
+  #aboutme:hover article:hover:before{
+    opacity: 0;
+  }
+
 
   #work article h1{
     font-weight: 400;
@@ -156,6 +182,8 @@ a.symbol:before {
     margin-left: 4%;    
   }
 
+
+  
   #work article:nth-child(odd){
     float: right;
     margin-right: 4%;        
