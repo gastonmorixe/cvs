@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gaston Morixe</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.easing.1.3.js"></script>
+<script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js"></script>
+
+<style>
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot');
+    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  text-decoration: none;
+}
+a.symbol:link{
+  text-decoration: none;
+}
+a.symbol:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+
+  body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    /*font-weight: lighter;*/
+  }
+
+  a:link, a:visited, a:hover, a:active, a:focus {
+    color: white;
+    text-decoration: underline;
+  }
+
+
+  a.bigh:link, a.bigh:visited, a.bigh:hover, a.bigh:active, a.bigh:focus {
+    text-decoration: none;
+  }
+
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  strong{
+    font-weight: bolder;
+  }
+
+  .big{
+    font-size: 2em;
+  }
+
+  #wrapper{
+    margin: 30px;
+    display: block;
+    float: left;
+  }
+
+  section, footer{
+    display: block;
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  #aboutme {
+    margin: -15px;
+  }
+
+  #aboutme article{
+    vertical-align: baseline;
+    width: 400px;
+    height: 400px;
+    padding: 60px;
+    display: inline-block;
+    float: left;
+    margin: 15px;
+  }
+
+  #work article h1{
+    font-weight: 400;
+  }
+
+  #aboutme article + #aboutme article{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #work header h1{
+    font-size: 5em;
+    display: block;
+    width: 100%;
+    line-height: 2;
+    color: black;
+    font-style: italic;
+    font-weight: 200;
+    margin-left: 5%;
+    /*display: inline-block;*/
+  }
+
+  #work header h1 span{
+    display: inline-block;
+  }
+
+  #work article{
+    position: relative;
+    background-color: #ddd;
+    padding: 45px;
+    display: block;
+    float: left;
+    clear: both;
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 450px;
+    margin-left: 4%;    
+  }
+
+  #work article:nth-child(odd){
+    float: right;
+    margin-right: 4%;        
+    margin-left: 0;        
+  }
+
+  aside {
+    line-height: 1;
+    font-size: 10em;
+    font-weight: 200;
+    color: #eee;
+    position: absolute;
+    right: -.1em;
+    margin-top: 1.5em;
+  }
+
+  aside.left{
+    right: auto;    
+    left: -.1em;
+  }
+
+  #intro {
+    background-color: #FF9696;
+  }
+
+  #education{
+    background-color: #72E0C5;
+  }
+
+  #aboutme article h1{
+    background: url(/images/edu.svg) no-repeat left top;
+    color: transparent;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  #aboutme #hobbies h1{
+    background-image: url(/images/hobbies.svg);
+  }  
+
+  #aboutme #geek h1{
+    background-image: url(/images/geek.svg);
+  }    
+
+  #aboutme #designer h1{
+    background-image: url(/images/designer.svg);
+  }    
+
+  #hobbies{
+    background-color: #F8DF72;
+  }
+
+  #geek{
+    background-color: #93CCF4;
+  }
+
+  #designer{
+    background-color: #D9D9D9;
+  }
+
+  #mepic{
+    color: transparent;
+    background: url(//igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/e15/926940_411101315687212_2105019395_n.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  #aboutme .col img{
+    /*width*/: 100%;
+    height: 40px;
+    margin-bottom: 15px
+  }
+  #aboutme .cols{
+    display: flex;   
+    justify-content: space-between;
+  }
+  #aboutme .col{
+    text-align: left;
+  }
+
+  #work h1{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0.3;
+    margin-right: 1em;
+  }
+
+  #work h1 .light{
+    font-weight: 200;
+  }
+
+  #work #audify{
+    background-color: #F3A8C7;
+  }
+
+  #work #fitclub{
+    background-color: #A2B9D0;
+  } 
+
+  #work #gripper{
+    background-color: #B0D0F2;
+  }  
+
+  #work #pepe{
+    background-color: #73D93D;
+  }  
+
+  #work #musa{
+    background-color: #CF544D;
+  } 
+
+  #work #cointrust{
+    background-color: #F4F5EF;
+    color: #878686;
+  }
+
+  #work article .content{
+    width: 300px;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  #work article .sample{
+    position: absolute;
+
+  }
+
+
+
+  #audify .sample{
+    bottom: -200px;
+    left: -70px;
+  }
+
+
+  #work #fitclub .content{
+    width: 350px;
+  }
+
+  #fitclub .sample{
+    bottom: -220px;
+    right: -60px;
+  }
+
+
+  #work #gripper h1 {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  #gripper .sample {
+    top: -80px;
+    right: -200px;    
+  }
+
+
+  #pepe .sample {
+    bottom: -300px;
+    right: -80px;    
+  }  
+
+
+  #musa .sample {
+    bottom: -280px;
+    left: -80px;    
+  }  
+
+  #work #cointrust h1 {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  #cointrust .sample {
+    top: -100px;
+    right: -90px;    
+  }  
+
+  #misc {
+    width: 100%;
+    display: block;
+    columns: 100px 3;
+  }
+
+  #misc a:link, #misc a:hover, #misc a:visited {
+    color: black;
+  }
+
+  #misc, 
+  footer{
+    color: black;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+  }
+
+  #misc strong { 
+    line-height: 2; 
+  }
+
+  footer{
+    
+    margin: 50px 0;
+  }
+
+  footer a:link, 
+  footer a:visited, 
+  footer a:hover {
+    color: black;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<section id="aboutme">
+
+  <article id="mepic" data-parallax='{"y": -800}'>
+    <p>Me</p>
+  </article>
+
+  <article id="intro" data-parallax='{"y": -900}'>
+    <p class="big">Hi! 😎</p>
+    <p>I’m <strong>Gaston Morixe</strong>, 22.<br>I live in MVD, Uruguay.</p>
+    <p>Senior in iOS, Ruby &amp; UI design.</p>
+    <p><a href='https://www.facebook.com/profile.php?id=1171410463' class='symbol' title='circlefacebook'></a> <a href='http://twitter.com/gastn___' class='symbol' title='circletwitterbird'></a> <a href='http://instagram.com/gastn___' class='symbol' title='circleinstagram'></a> <a href='http://github.com/imton' class='symbol' title='circlegithub'></a> <a href='http://uy.linkedin.com/in/imton' class='symbol' title='circlelinkedin'></a></p>
+  </article>
+
+  <article id="education" data-parallax='{"y": -1000}'>
+    <h1>education</h1>
+    <p>Mostly self-taught. (internet is awesome)</p>
+
+    <p>2008-2010 <a href="http://www.elbiofernandez.edu.uy">Elbio Fernández</a>. <a href="http://www.montevideo.com.uy/auc.aspx?72520">3 years of full-tuition scholarship, competition awared</a>. Pre-software engineering.</p>
+
+    <p>English Level Proficiency.</p>
+  </article>  
+
+  <article id="hobbies" data-parallax='{"y": -1100}'>
+    <h1>hobbies</h1>
+    <div class="cols">
+    <p class="col">
+      <img src="/images/photo.svg">
+      <br>
+      photography
+    </p>
+    <p class="col">
+      <img src="/images/piano.svg">
+      <br>
+      <a href="https://www.youtube.com/watch?v=fhsJ-hgZU_E">piano</a>
+    </p>
+    <p class="col">
+      <img src="/images/ld.svg">
+      <br>
+      stage<br>
+      lighting<br>
+      design
+    </p>
+    </div>
+
+  </article>
+
+  <article id="geek" data-parallax='{"y": -1400}'>
+    <h1>geek</h1>
+    <div class="cols">
+    <p class="col">
+      <img src="/images/ios.svg">
+      <br>
+      iOS <br>objc <br>swift <br>RAC
+    </p>
+    <p class="col">
+      <img src="/images/ror.svg">
+      <br>
+      RoR <br>APIs <br>BDD <br>Coffee
+    </p>
+    <p class="col">
+      <img src="/images/db.svg">
+      <br>
+      PG
+      <br>Redis <3
+      <br>Mongo
+    </p>
+    </div>
+  </article>  
+
+  <article id="designer" data-parallax='{"y": -1800}'>
+    <h1>designer</h1>
+    <div class="cols">
+    <p class="col">
+      <img src="/images/ps.svg">
+      <br>
+      photoshop
+    </p>
+    <p class="col">
+      <img src="/images/sketch.svg">
+      <br>
+      sketch 3 <3
+    </p>
+    <p class="col">
+      <img src="/images/il.svg">
+      <br>
+      illustrator
+    </p>
+    </div>
+  </article> 
+
+</section>
+
+
+<section id="work">
+
+  <header><h1><span data-parallax='{"y": -450, "x": 10}'>work</span></h1></header>
+
+
+
+  <article id="audify" >
+    <aside data-parallax='{"y": -600, "x": 20}'>2015</aside>
+
+
+    <a class="bigh" href="http://audify.io">
+    <h1>audify.io <span class="light">partner &amp; CTO</span></h1>  
+    <div class="content">
+      <p>Programatic advertising network from scratch.</p>
+      <p>With million hits dialy, I had to architect a custom realtime multi-dimensional analytics + ad engine.</p>
+      <p><strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/audify.png"></p>
+    </div></a>
+  </article>
+
+  <article id="fitclub">
+    <h1>fitclub <span class="light">co-founder</span></h1>  
+    <div class="content">
+      <p> All your city sport activity in one marketplace.
+
+      <p><strong>Full UI +  Branding</strong></p>
+      <p><strong>Tech</strong> RubyOnRails + Mongo. Future iOS &amp; Android.</p>
+
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/fitclub.png"></p>
+    </div>
+  </article>
+
+  <article id="gripper">
+    <h1>gripper <span class="light">client</span></h1>  
+    <div class="content">
+
+      <p><strong>App UI/UX</strong></p>
+      <p><strong>Tech</strong> Future iOS &amp; Android.</p>
+
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/gripper.png"></p>
+    </div>
+  </article>
+
+  
+
+  <article id="pepe">
+  <aside class="left" data-parallax='{"y": -600, "x": 20}'>2014</aside>
+    <h1>pepe <span class="light">client</span></h1>  
+    <div class="content">
+
+      <p>MVP for Latin America eCommerce startup.</p>
+
+      <p><strong>Full UI + Branding</strong></p>
+      <p><strong>Tech</strong> RubyAPI. iOS Dev + RestKit w/ CoreData + objc &amp; Swift mix.</p>
+
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/pepe.png"></p>
+    </div>
+  </article>
+
+
+  <article id="musa">
+  <a class="bigh" href="http://facebook.com/musapizzas">
+    <h1>musa <span class="light">client</span></h1>  
+    <div class="content">
+
+      <p>Pizzas gourmet company. musapizzas.com</p>
+
+      <p><strong>Full UI + Branding</strong></p>
+      <p><strong>Tech</strong> Tech iOS + Android launched. More to come.</p>
+
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/musa.png"></p>
+    </div></a>
+  </article>
+
+
+  <article id="cointrust">
+    <h1>cointrust <span class="light">client</span></h1>  
+    <div class="content">
+
+      <p>2013. Bitcoin Startup.<br>live interactive</p>
+
+      <p><strong>Full UI + Branding</strong></p>
+      <p><strong>Tech</strong> 
+      <br>Cryptography + Full Bitcoin research
+      <br>Bitcoind + Ruby integration
+      <br>Security Strategy</p>
+
+      <p class="sample" data-parallax='{"y": 100}'><img src="/images/samples/cointrust.png"></p>
+    </div>
+  </article>
+
+
+
+</section>
+
+<section id="misc">
+<p><strong>2014</strong></p>
+
+<p><a href="/loovin.html">LOOVIN</a>
+<br>CO-FOUNDER 
+<br>ECOMMERCE TECH STARTUP
+<br>DEV iOS APP</p>
+
+<p><a href="/unforgettable.html"> FERMATA. UNFORGETTABLE</a>
+<br>ART DESIGNER</p>
+
+<p><strong>2013</strong></p>
+
+<p><a href="https://www.youtube.com/watch?v=vcd0_gUNw6Q">BEBZZ</a>
+<br>CLIENT. STARTUP AD
+<br>MOTION GRAPHICS</p>
+
+<p><a href="https://www.youtube.com/watch?v=t4eXjqG0hn4">VISUAL APP</a>
+<br>CLIENT. STARTUP AD
+<br>DIRECTOR</p>
+
+<p><a href="/ledsport.html">LEDSPORT</a>
+<br>FOUNDER
+<br>REALTIME SOFTWARE FOR SOCCER LED DISPLAYS</p>
+
+<p>FERMATA. CASTING PRODUCER</p>
+
+
+<p><strong>2012 </strong></p>
+
+<p><a href="https://www.youtube.com/watch?v=r4jUkyp9isQ">SMART CARGO</a>
+<br>CLIENT. STARTUP AD.
+<br>MOTION GRAPHICS</p>
+
+<p>MAS ANCHO DE BANDA 2
+<br>URUGUAY INTERNET CAMPAIGN</p>
+
+<p><a href="https://www.youtube.com/watch?v=_99nkX_x3fs">FERMATA. CELEBRATION</a>
+<br>ADELA RETA TEATHER 
+<br>LIGHTING DESIGNER / BLU RAY DIRECTOR</p>
+
+<p><strong>2010 </strong></p>
+
+<p><a href="https://www.youtube.com/watch?v=_g0m-my3IfY">FERMATA. HITS</a>
+<br>MOVIE CENTER TEATHER
+<br>PRODUCER / LIGHTING DESIGNER / DVD DIRECTOR</p>
+
+<p><strong>2009 </strong></p>
+
+<p><a href="https://www.youtube.com/watch?v=JrpPtfycYlg">FERMATA. MUSICA A TRAVÉS DEL TIEMPO</a>
+<br>MOVIE CENTER TEATHER
+<br>LIGHTING DESIGNER / DVD DIRECTOR</p>
+
+
+
+
+</section>
+
+<footer>
+<p>♥︎ YOU
+<br>
+<a href="/">GO BACK TO ↑</a></p>
+</footer>
+
+</div>
+
+</body>
+
+</html>
