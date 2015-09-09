@@ -55,6 +55,9 @@ a:link, a:visited, a:hover, a:active, a:focus {
   color: white;
   text-decoration: underline;
 }
+a:hover {
+  color: rgba(255,255,255,0.9);  
+}
 
 
 a.bigh:link, a.bigh:visited, a.bigh:hover, a.bigh:active, a.bigh:focus {
@@ -102,7 +105,7 @@ section, footer, #work{
   position: relative;
 }
 
-
+/*
 #aboutme article:before{
   background-color: white;
   position: absolute;
@@ -124,7 +127,7 @@ section, footer, #work{
 
 #aboutme:hover article:hover:before{
   opacity: 0;
-}
+}*/
 
 #work{
   overflow-x: hidden;
