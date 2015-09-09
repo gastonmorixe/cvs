@@ -1,28 +1,28 @@
 
 @font-face {
-    font-family: 'Mono Social Icons Font';
-    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot');
-    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Mono Social Icons Font';
+  src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot');
+  src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+  url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.woff') format('woff'),
+  url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+  url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('//cdn.rawgit.com/drinchev/monosocialiconsfont/master/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .symbol, a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   text-decoration: none;
 }
 a.symbol:link{
@@ -33,346 +33,372 @@ a.symbol:hover{
   opacity: 0.8;
 }
 a.symbol:before {
-    content: attr(title);
-    margin-right: 0.3em;
-    font-size: 130%;
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
 }
 
 
-  body{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    line-height: 2;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    /*font-weight: lighter;*/
-  }
+body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  /*overflow-x: hidden;*/
+  /*font-weight: lighter;*/
+}
 
-  a:link, a:visited, a:hover, a:active, a:focus {
-    color: white;
-    text-decoration: underline;
-  }
-
-
-  a.bigh:link, a.bigh:visited, a.bigh:hover, a.bigh:active, a.bigh:focus {
-    text-decoration: none;
-  }
+a:link, a:visited, a:hover, a:active, a:focus {
+  color: white;
+  text-decoration: underline;
+}
 
 
-  a:hover{
-    text-decoration: underline;
-  }
-
-  strong{
-    font-weight: bolder;
-  }
-
-  .big{
-    font-size: 2em;
-  }
-
-  #wrapper{
-    margin: 30px;
-    display: block;
-    float: left;
-  }
-
-  section, footer{
-    display: block;
-    width: 100%;
-    float: left;
-    clear: both;
-  }
-
-  #aboutme {
-    margin: -15px;
-  }
-
-  #aboutme article{
-    vertical-align: baseline;
-    width: 400px;
-    height: 400px;
-    padding: 60px;
-    display: inline-block;
-    float: left;
-    margin: 15px;
-    position: relative;
-  }
+a.bigh:link, a.bigh:visited, a.bigh:hover, a.bigh:active, a.bigh:focus {
+  text-decoration: none;
+}
 
 
-  #aboutme article:before{
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: block;  
-    content: " ";
-    z-index: 1;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .3s ease-in-out;
-  }
+a:hover{
+  text-decoration: underline;
+}
 
-  #aboutme:hover article:before{
-    opacity: 0.1;
-  }
+strong{
+  font-weight: bolder;
+}
 
-  #aboutme:hover article:hover:before{
-    opacity: 0;
-  }
+.big{
+  font-size: 2em;
+}
 
+#wrapper{
+  display: block;
+  float: left;
+}
 
-  #work article h1{
-    font-weight: 400;
-  }
+section, footer, #work{
+  padding: 30px;  
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+}
 
-  #aboutme article + #aboutme article{
-    margin-left: 0;
-    margin-top: 0;
-  }
+#aboutme {
+  margin: -15px;
+}
 
-  #work header h1{
-    font-size: 5em;
-    display: block;
-    width: 100%;
-    line-height: 1;
-    color: black;
-    font-style: italic;
-    font-weight: 200;
-    margin-left: 5%;
-    /*display: inline-block;*/
-  }
-
-  #work header h1 span{
-    display: inline-block;
-  }
-
-  #work article{
-    position: relative;
-    background-color: #ddd;
-    padding: 45px;
-    display: block;
-    float: left;
-    clear: both;
-    height: 400px;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 450px;
-    margin-left: 4%;    
-  }
+#aboutme article{
+  vertical-align: baseline;
+  width: 400px;
+  height: 400px;
+  padding: 60px;
+  display: inline-block;
+  float: left;
+  margin: 15px;
+  position: relative;
+}
 
 
+#aboutme article:before{
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;  
+  content: " ";
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+#aboutme:hover article:before{
+  opacity: 0.1;
+}
+
+#aboutme:hover article:hover:before{
+  opacity: 0;
+}
+
+#work{
+  overflow-x: hidden;
+}
+
+#work article h1{
+  font-weight: 400;
+}
+
+#aboutme article + #aboutme article{
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#work header h1{
+  font-size: 5em;
+  display: block;
+  width: 100%;
+  line-height: 4;
+  color: black;
+  font-style: italic;
+  font-weight: 200;
+  padding-left: 5%;
+  /*display: inline-block;*/
+}
+
+#work header h1 span{
+  display: inline-block;
+}
+
+#work .work{
+  position: relative;
+  /*background-color: #ddd;*/
+  height: 400px;
+  width: 100%;
   
-  #work article:nth-child(odd){
-    float: right;
-    margin-right: 4%;        
-    margin-left: 0;        
-  }
+}
 
-  aside {
-    line-height: 1;
-    font-size: 10em;
-    font-weight: 200;
-    color: #eee;
-    position: absolute;
-    right: -.1em;
-    margin-top: 1.5em;
-  }
+.work article{
+  width: 800px;
+  margin-left: 50px;    
+  padding: 45px;
+  height: 100%;
+  position: relative;
+}
 
-  aside.left{
-    right: auto;    
-    left: -.1em;
-  }
+#work article.right{
+  float: right;
+  margin-right: 60px;        
+  margin-left: 0;        
+}  
 
-  #intro {
-    background-color: #FF9696;
-  }
+#work .work + .work {
+  margin-top: 450px;
+}
 
-  #education{
-    background-color: #72E0C5;
-  }
-
-  #aboutme article h1{
-    background: url(/images/edu.svg) no-repeat left top;
-    color: transparent;
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
-  #aboutme #hobbies h1{
-    background-image: url(/images/hobbies.svg);
-  }  
-
-  #aboutme #geek h1{
-    background-image: url(/images/geek.svg);
-  }    
-
-  #aboutme #designer h1{
-    background-image: url(/images/designer.svg);
-  }    
-
-  #hobbies{
-    background-color: #F8DF72;
-  }
-
-  #geek{
-    background-color: #93CCF4;
-  }
-
-  #designer{
-    background-color: #D9D9D9;
-  }
-
-  #mepic{
-    color: transparent;
-    background: url(//igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/e15/926940_411101315687212_2105019395_n.jpg) no-repeat 50% 50%;
-    background-size: cover;
-  }
-  #aboutme .col img{
-    /*width*/: 100%;
-    height: 40px;
-    margin-bottom: 15px
-  }
-  #aboutme .cols{
-    display: flex;   
-    justify-content: space-between;
-  }
-  #aboutme .col{
-    text-align: left;
-  }
-
-  #work h1{
-    display: inline-block;
-    vertical-align: top;
-    line-height: 0.3;
-    margin-right: 1em;
-  }
-
-  #work h1 .light{
-    font-weight: 200;
-  }
-
-  #work #audify{
-    background-color: #F3A8C7;
-  }
-
-  #work #fitclub{
-    background-color: #A2B9D0;
-  } 
-
-  #work #gripper{
-    background-color: #B0D0F2;
-  }  
-
-  #work #pepe{
-    background-color: #73D93D;
-  }  
-
-  #work #musa{
-    background-color: #CF544D;
-  } 
-
-  #work #cointrust{
-    background-color: #F4F5EF;
-    color: #878686;
-  }
-
-  #work article .content{
-    width: 300px;
-    vertical-align: top;
-    display: inline-block;
-  }
-
-  #work article .sample{
-    position: absolute;
-
-  }
+#work .work:last-child{
+  margin-bottom: 200px;
+}
 
 
+.year {
+  line-height: 1;
+  font-size: 10em;
+  font-weight: 200;
+  color: #eee;
+  position: absolute;
+  right: -.1em;
+  /*float: left;*/
+  /*top: -2em;*/
+  /*margin-top: -2em;*/
+}
 
-  #audify .sample{
-    bottom: -200px;
-    left: -70px;
-  }
+.year.left{
+  right: auto;    
+  left: -.1em;
+}
+
+#intro {
+  background-color: #FF9696;
+}
+
+#education{
+  background-color: #72E0C5;
+}
+
+#aboutme article h1{
+  background: url(/images/edu.svg) no-repeat left top;
+  color: transparent;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#aboutme #hobbies h1{
+  background-image: url(/images/hobbies.svg);
+}  
+
+#aboutme #geek h1{
+  background-image: url(/images/geek.svg);
+}    
+
+#aboutme #designer h1{
+  background-image: url(/images/designer.svg);
+}    
+
+#hobbies{
+  background-color: #F8DF72;
+}
+
+#geek{
+  background-color: #93CCF4;
+}
+
+#designer{
+  background-color: #D9D9D9;
+}
+
+#mepic{
+  color: transparent;
+  background: url(/images/profile.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#aboutme .col img{
+  /*width*/: 100%;
+  height: 40px;
+  margin-bottom: 15px
+}
+#aboutme .cols{
+  display: flex;   
+  justify-content: space-between;
+}
+#aboutme .col{
+  text-align: left;
+}
+
+#work h1{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 0.3;
+  margin-right: 1em;
+}
+
+#work h1 .light{
+  font-weight: 200;
+}
+
+#work #audify{
+  background-color: #F3A8C7;
+}
+
+#work #fitclub{
+  background-color: #A2B9D0;
+} 
+
+#work #gripper{
+  background-color: #B0D0F2;
+}  
+
+#work #pepe{
+  background-color: #73D93D;
+}  
+
+#work #musa{
+  background-color: #CF544D;
+} 
+
+#work #cointrust{
+  background-color: #F4F5EF;
+  color: #878686;
+}
+
+#work article .content{
+  width: 300px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#work article .sample{
+  position: absolute;
+
+}
 
 
-  #work #fitclub .content{
-    width: 350px;
-  }
 
-  #fitclub .sample{
-    bottom: -220px;
-    right: -60px;
-  }
+#audify .sample{
+  bottom: -200px;
+  left: -70px;
+}
 
 
-  #work #gripper h1 {
-    width: 100%;
-    margin-bottom: 1.5em;
-  }
+#work #fitclub .content{
+  width: 350px;
+}
 
-  #gripper .sample {
-    top: -80px;
-    right: -200px;    
-  }
-
-
-  #pepe .sample {
-    bottom: -300px;
-    right: -80px;    
-  }  
+#fitclub .sample{
+  bottom: -220px;
+  right: -60px;
+}
 
 
-  #musa .sample {
-    bottom: -280px;
-    left: -80px;    
-  }  
+#work #gripper h1 {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
 
-  #work #cointrust h1 {
-    width: 100%;
-    margin-bottom: 1.5em;
-  }
+#gripper .sample {
+  top: -80px;
+  right: -200px;    
+}
 
-  #cointrust .sample {
-    top: -100px;
-    right: -90px;    
-  }  
 
-  #misc {
-    width: 100%;
-    display: block;
-    columns: 100px 3;
-    -webkit-columns: 100px 3;
-  }
+#pepe .sample {
+  bottom: -300px;
+  right: -80px;    
+}  
 
-  #misc a:link, #misc a:hover, #misc a:visited {
-    color: black;
-  }
 
-  #misc, 
-  footer{
-    color: black;
-    font-size: 0.75em;
-    letter-spacing: 1px;
-  }
+#musa .sample {
+  bottom: -300px;
+  left: -80px;    
+}  
 
-  #misc strong { 
-    line-height: 2; 
-  }
+#work #cointrust h1 {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
 
-  footer{
-    
-    margin: 50px 0;
-  }
+#cointrust .sample {
+  top: -100px;
+  right: -90px;    
+}  
 
-  footer a:link, 
-  footer a:visited, 
-  footer a:hover {
-    color: black;
-  }
+#misc {
+  width: 100%;
+  display: block;
+  columns: 100px 3;
+  -webkit-columns: 100px 3;
+}
+
+#misc a:link, 
+#misc a:hover, 
+#misc a:visited {
+  color: black;
+}
+
+#misc, footer{
+  color: black;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+}
+
+#misc strong { 
+  line-height: 2; 
+}
+
+#misc .group{
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+footer{
+  margin: 50px 0;
+}
+
+footer a:link, 
+footer a:visited, 
+footer a:hover {
+  color: black;
+}
+
+
+@media (max-width: 600px) {
+
+}
