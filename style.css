@@ -90,19 +90,55 @@ section, footer, #work{
   clear: both;
 }
 
-#aboutme {
-  margin: -15px;
+#aboutme{
+  width: 100%;
+  padding: 0;
+  perspective: 600px;
+  /*background-color: #505254;*/
+  perspective-origin: 50% 50%;      
+}
+
+#aboutme .roww {
+  /*margin: -15px;*/
+  margin: 0;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#aboutme .cont{
+  /*background: blue;*/
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 #aboutme article{
-  vertical-align: baseline;
-  width: 400px;
+  text-align: center;
+  vertical-align: top;
+  width: 33.33%;
   height: 400px;
+  min-width: 430px;
+  /*margin: 15px;*/
+  display: inline-flex;
+  flex: 1;
   padding: 60px;
-  display: inline-block;
-  float: left;
-  margin: 15px;
+  /*display: inline-block;*/
+  /*float: left;*/
+  /*margin: 15px;*/
   position: relative;
+  /*box-shadow: 0 0px 0px rgba(180, 180, 220, 0.2);*/
+  transition: .2s all ease; 
+
+}
+
+#aboutme article:hover{
+  z-index: 1;
+  position: relative;
+  /*transform: translateZ(10px);*/
+  /*box-shadow: 0 25px 30px rgba(180, 180, 220, 0.2);*/
 }
 
 /*
@@ -221,6 +257,17 @@ section, footer, #work{
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
+  transition: all .4s ease;
+}
+
+#aboutme article h1,
+#aboutme article .big{
+  transition: all .4s ease;
+}
+
+#aboutme article:hover h1, 
+#aboutme article:hover .big{
+  transform: translateX(20px);
 }
 
 #aboutme #hobbies h1{
@@ -236,7 +283,7 @@ section, footer, #work{
 }    
 
 #hobbies{
-  background-color: #F8DF72;
+  background-color: #FBE162;
 }
 
 #geek{
@@ -301,6 +348,9 @@ section, footer, #work{
   color: #878686;
 }
 
+#work article{
+}
+
 #work article .content{
   width: 300px;
   vertical-align: top;
@@ -309,7 +359,21 @@ section, footer, #work{
 
 #work article .sample{
   position: absolute;
+  perspective: 600px;
+  perspective-origin: 30% 80%;    
+}
 
+#work article.right .sample{
+  perspective-origin: 70% 80%;    
+}
+
+#work article .sample-wrapper{
+  display: inline-block;
+  transition: .4s all ease;  
+}
+
+#work article:hover .sample-wrapper{
+  transform: translateZ(30px);
 }
 
 
@@ -396,12 +460,71 @@ footer{
 }
 
 footer a:link, 
-footer a:visited, 
-footer a:hover {
+footer a:visited {
   color: black;
 }
 
+footer a:hover {
+  color: #82A4CA;
+}
 
-@media (max-width: 600px) {
+
+@media (max-width: 1320px) {
+  #aboutme article{
+    min-width: 400px;
+    padding: 60px 45px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  #aboutme article{
+    min-width: 300px;
+    height: 350px;
+    padding: 45px 45px;
+  }
+
+}
+@media (max-width: 1140px) {
+  #aboutme {
+
+  }
+  #aboutme article{
+    margin: 0;
+    width: 50%;
+    height: 400px;
+    padding: 60px 60px;
+  }
+
+}
+
+@media (max-width: 940px) {
+
+  #aboutme article{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px;
+  }
+
+  #work{
+    padding: 0;
+  }
+
+  #work article{
+    width: 100%;
+    margin-left: 0;    
+  }
+
+  #work article.right{
+    float: left;
+    margin-right: 0px;        
+  }    
+
+
+  #work .sample{
+    transform: scale(0.9) !important;
+  }    
+
 
 }
