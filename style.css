@@ -323,6 +323,11 @@ section, footer, #work{
   font-weight: 200;
 }
 
+#work #stranger{
+  background-color: #EEE;
+  color: #000;
+}
+
 #work #audify{
   background-color: #F3A8C7;
 }
@@ -377,6 +382,11 @@ section, footer, #work{
 }
 
 
+#stranger .sample{
+  bottom: -240px;
+  left: 0px;
+}
+
 
 #audify .sample{
   bottom: -200px;
@@ -389,8 +399,8 @@ section, footer, #work{
 }
 
 #fitclub .sample{
-  bottom: -220px;
-  right: -60px;
+  bottom: -250px;
+  left: -60px;
 }
 
 
@@ -401,13 +411,13 @@ section, footer, #work{
 
 #gripper .sample {
   top: -80px;
-  right: -200px;    
+  right: -80px;    
 }
 
 
 #pepe .sample {
   bottom: -300px;
-  right: -80px;    
+  left: -70px;    
 }  
 
 
