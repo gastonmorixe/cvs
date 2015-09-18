@@ -97,6 +97,10 @@ section, footer, #work{
   clear: both;
 }
 
+#work{
+  padding: 0;
+}
+
 #aboutme{
   width: 100%;
   padding: 0;
@@ -148,76 +152,53 @@ section, footer, #work{
   /*box-shadow: 0 25px 30px rgba(180, 180, 220, 0.2);*/
 }
 
-/*
-#aboutme article:before{
-  background-color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;  
-  content: " ";
-  z-index: 1;
-  opacity: 0;
-  pointer-events: none;
-  transition: all .3s ease-in-out;
+
+#work{
+  overflow-x: hidden;
 }
 
-#aboutme:hover article:before{
-  opacity: 0.1;
+#work article h1{
+  font-weight: 400;
 }
 
-#aboutme:hover article:hover:before{
-  opacity: 0;
-  }*/
+#aboutme article + #aboutme article{
+  margin-left: 0;
+  margin-top: 0;
+}
 
-  #work{
-    overflow-x: hidden;
-  }
+#work header h1{
+  font-size: 5em;
+  display: block;
+  width: 100%;
+  line-height: 4;
+  color: black;
+  font-style: italic;
+  font-weight: 200;
+  padding-left: 5%;
+  /*display: inline-block;*/
+}
 
-  #work article h1{
-    font-weight: 400;
-  }
+#work header h1 span{
+  display: inline-block;
+}
 
-  #aboutme article + #aboutme article{
-    margin-left: 0;
-    margin-top: 0;
-  }
+#work .work{
+  position: relative;
+  /*background-color: #ddd;*/
+  height: 400px;
+  width: 100%;
+  float: left;
+}
 
-  #work header h1{
-    font-size: 5em;
-    display: block;
-    width: 100%;
-    line-height: 4;
-    color: black;
-    font-style: italic;
-    font-weight: 200;
-    padding-left: 5%;
-    /*display: inline-block;*/
-  }
+.work article{
+  width: 800px;
+  margin-left: 50px;    
+  padding: 45px;
+  height: 100%;
+  position: relative;
+}
 
-  #work header h1 span{
-    display: inline-block;
-  }
-
-  #work .work{
-    position: relative;
-    /*background-color: #ddd;*/
-    height: 400px;
-    width: 100%;
-
-  }
-
-  .work article{
-    width: 800px;
-    margin-left: 50px;    
-    padding: 45px;
-    height: 100%;
-    position: relative;
-  }
-
-  #work article .cont{
+#work article .cont{
   /*display: inline-block;
   float: left;*/
 }
@@ -241,7 +222,7 @@ section, footer, #work{
   line-height: 1;
   font-size: 10em;
   font-weight: 200;
-  color: #eee;
+  color: #fafafa;
   position: absolute;
   right: -.1em;
   /*float: left;*/
@@ -271,6 +252,8 @@ section, footer, #work{
   margin-bottom: 40px;
   transition: all .4s ease;
 }
+
+
 
 #aboutme article h1,
 #aboutme article .big{
@@ -335,38 +318,79 @@ section, footer, #work{
   font-weight: 200;
 }
 
-#work #stranger{
+#work #stranger-w{
   background-color: #EEE;
   color: #000;
 }
 
-#work #audify{
+#work #audify-w{
   background-color: #F3A8C7;
 }
 
-#work #fitclub{
+#work #fitclub-w{
   background-color: #A2B9D0;
 } 
 
-#work #gripper{
+#work #gripper-w{
   background-color: #B0D0F2;
 }  
 
-#work #pepe{
+#work #pepe-w{
   background-color: #73D93D;
 }  
 
-#work #musa{
+#work #musa-w{
   background-color: #CF544D;
 } 
 
-#work #cointrust{
+#work #cointrust-w{
   background-color: #F4F5EF;
   color: #878686;
 }
 
 #work article{
+  position: relative;
 }
+
+#work  .work:after{
+  content: "VIEW MORE";
+  padding-top: 38px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: bold;
+  width: 33px;
+  height: 60px;
+  background: url(/next-clear.svg) no-repeat top right;
+  background-size: contain;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: block;
+  transition: .15s ease-out all;
+  transform: translateX(20px);
+  opacity: 0;
+  color: white;
+}
+
+.touchevents #work .work:after,
+#work  .work:hover:after{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#work  #stranger-w:after,
+#work  #cointrust-w:after{
+  color: black;
+  background-image: url(/next-dark.svg);
+}
+
+#work  #gripper-w:after{
+  right: 330px;
+}
+
+
 
 #work article .content{
   width: 300px;
@@ -378,6 +402,12 @@ section, footer, #work{
   position: absolute;
   perspective: 600px;
   perspective-origin: 30% 80%;    
+}
+#work article .sample,
+#work article .sample .sample-wrapper,
+#work article .sample img{
+  user-select: none;
+  pointer-events: none;
 }
 
 #work article.right .sample{
@@ -412,7 +442,7 @@ section, footer, #work{
 
 #fitclub .sample{
   bottom: -310px;
-  left: -60px;
+  left: -30px;
 }
 
 
@@ -422,20 +452,20 @@ section, footer, #work{
 }
 
 #gripper .sample {
-  bottom: -270px;
-  right: -80px;    
+  bottom: -290px;
+  right: -60px;    
 }
 
 
 #pepe .sample {
   bottom: -370px;
-  left: -70px;    
+  left: -40px;    
 }  
 
 
 #musa .sample {
   bottom: -360px;
-  left: -80px;    
+  left: -40px;    
 }  
 
 #work #cointrust h1 {
@@ -615,9 +645,18 @@ footer a:hover {
   }
 
 
-#work .work:last-child{
-  margin-bottom: 50px;
-}
+  #work .work:last-child{
+    margin-bottom: 50px;
+  }
+
+  #work  .work:after{
+    transform: translateX(0);
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    content: " ";
+    right: 30px !important;
+  }
 
 
 /*  #work .sample{

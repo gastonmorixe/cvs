@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- 
+   _   __               _____ _   _____ _                 _      
+  | | / /              |_   _| | /  ___(_)               | |     
+  | |/ /  ___  ___ _ __  | | | |_\ `- . _ _ __ ___  _ __ | | ___ 
+  |    \ / _ \/ _ \ '_ \ | | | __|`- . \ | '_ ` _ \| '_ \| |/ _ \
+  | |\  \  __/  __/ |_) || |_| |_/\__/ / | | | | | | |_) | |  __/
+  \_| \_/\___|\___| .__/\___/ \__\____/|_|_| |_| |_| .__/|_|\___|
+                  | |                              | |           
+                  |_|                              |_|           
+  ______        _____                _                           
+  | ___ \      |  __ \              | |                          
+  | |_/ / ___  | |  \/_ __ ___  __ _| |_                         
+  | ___ \/ _ \ | | __| '__/ _ \/ _` | __|                        
+  | |_/ /  __/ | |_\ \ | |  __/ (_| | |_                         
+  \____/ \___|  \____/_|  \___|\__,_|\__|                        
+                                                                 
+                                                                 
+   _                                                             
+  | |                                                            
+  | |     _____   _____                                          
+  | |    / _ \ \ / / _ \                                         
+  | |___| (_) \ V /  __/                                         
+  \_____/\___/ \_/ \___|     
+
+  G A S T O N <3                                    
+                                
+   -->
+
   <meta charset="UTF-8">
   <title>Gaston Morixe</title>
 
@@ -15,6 +44,8 @@
   <script src="//cdn.rawgit.com/jcampbell1/jquery-srcset-retina-polyfill/master/jquery.srcset.js"></script>
   <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.easing.1.3.js"></script>
   <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js"></script>
+
+  <script src="/modernizr.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -35,15 +66,15 @@
         <div class="cont" data-parallax='{"y": -0, "smoothness": 10}'><p>Me</p></div>
       </article><article id="intro">
       <div class="cont" data-parallax='{"y": -0, "smoothness": 10}'>
-        <p class="big">Hi 😎</p>
-        <p>I’m <strong>Gaston Morixe</strong>, 22, from <a href="https://www.google.com.uy/#q=montevideo+uruguay">Montevideo, Uruguay.</a></p>
+        <p class="big">Hi! 😎</p>
+        <p>I’m <strong>Gaston Morixe</strong>, 22, <a href="https://www.google.com.uy/#q=montevideo+uruguay">Uruguayan</a> &amp; Spanish.</p>
         <p>Crazy senior in iOS, Ruby &amp; UI design.</p>
         <p><a href='https://www.facebook.com/profile.php?id=1171410463' class='symbol' title='circlefacebook'></a> <a href='http://twitter.com/gastn___' class='symbol' title='circletwitterbird'></a> <a href='http://instagram.com/gastn___' class='symbol' title='circleinstagram'></a> <a href='http://github.com/imton' class='symbol' title='circlegithub'></a> <a href='http://uy.linkedin.com/in/imton' class='symbol' title='circlelinkedin'></a></p>
       </div>
     </article><article id="education">
     <div class="cont" data-parallax='{"y": -0, "smoothness": 10}'>
       <h1>education</h1>
-      <p>Mostly self-taught. (internet is awesome)</p>
+      <p>Mostly self-taught (the internet is awesome!).</p>
 
       <p>2008-2010 <a href="http://www.elbiofernandez.edu.uy">Elbio Fernández</a>. <a href="http://www.montevideo.com.uy/auc.aspx?72520">3 years of full-tuition scholarship, competition awarded</a>. Pre-software engineering.</p>
 
@@ -126,7 +157,7 @@
 
   <header><h1><span data-parallax='{"y": -50, "x": 10}'>work</span></h1></header>
 
-  <div class="work">
+  <div class="work" id="stranger-w">
     <aside class="year" data-parallax='{"y": -100, "x": 20}'>2015</aside>
 
     <article id="stranger">
@@ -142,21 +173,23 @@
   </div>
 
 
-  <div class="work">
-    <article id="audify" class="right">
-      <!-- <a class="bigh" href="http://audify.io"> -->
-      <h1>audify.io <span class="light">partner &amp; CTO</span></h1>  
-      <div class="content">
-        <p>Programatic advertising network from scratch.</p>
-        <p>With million hits dialy, I had to architect a custom realtime multi-dimensional analytics + ad engine.</p>
-        <p><strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
-        <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/audify.png" srcset="/images/samples/audify@2x.png 2x"></span></p>
-      </div>
-      <!-- </a> -->
-    </article>
+  <div class="work" id="audify-w">
+    <a href="#">
+      <article id="audify" class="right">
+        <!-- <a class="bigh" href="http://audify.io"> -->
+        <h1>audify.io <span class="light">partner &amp; CTO</span></h1>  
+        <div class="content">
+          <p>Programatic advertising network from scratch.</p>
+          <p>With million hits dialy, I had to architect a custom realtime multi-dimensional analytics + ad engine.</p>
+          <p><strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
+          <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/audify.png" srcset="/images/samples/audify@2x.png 2x"></span></p>
+        </div>
+        <!-- </a> -->
+      </article>
+    </a>
   </div>
 
-  <div class="work">
+  <div class="work" id="fitclub-w">
     <article id="fitclub">
       <h1>fitclub <span class="light">client</span></h1>
       <div class="content">
@@ -168,7 +201,7 @@
     </article>
   </div>
 
-  <div class="work">
+  <div class="work" id="gripper-w">
     <article id="gripper" class="right">
       <h1>gripper <span class="light">client</span></h1>  
       <div class="content">
@@ -181,7 +214,7 @@
 
 
 
-  <div class="work">
+  <div class="work" id="pepe-w">
     <aside class="year left" data-parallax='{"y": -200, "x": 20}'>2014</aside>
 
     <article id="pepe">
@@ -200,7 +233,7 @@
   </div>
 
 
-  <div class="work">
+  <div class="work" id="musa-w">
     <article id="musa">
       <!-- <a class="bigh" href="http://facebook.com/musapizzas"> -->
       <h1>musa <span class="light">client</span></h1>
@@ -218,7 +251,7 @@
   </div>
 
 
-  <div class="work">
+  <div class="work" id="cointrust-w">
     <article id="cointrust" class="right">
       <h1>cointrust <span class="light">client</span></h1>
       <div class="content">
