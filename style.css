@@ -191,8 +191,10 @@ section, footer, #work{
 }
 
 .work article{
+  /*background-color: rgba(0,0,0,.1);*/
   width: 800px;
-  margin-left: 50px;    
+  margin-left: auto;    
+  margin-right: auto;    
   padding: 45px;
   height: 100%;
   position: relative;
@@ -204,9 +206,9 @@ section, footer, #work{
 }
 
 #work article.right{
-  float: right;
-  margin-right: 60px;        
-  margin-left: 0;        
+  /*float: right;*/
+  /*margin-right: 60px;        */
+  /*margin-left: 0;        */
 }  
 
 #work .work + .work {
@@ -307,6 +309,10 @@ section, footer, #work{
   text-align: left;
 }
 
+.work > a:link{
+  text-decoration: none;
+}
+
 #work h1{
   display: inline-block;
   vertical-align: top;
@@ -319,7 +325,7 @@ section, footer, #work{
 }
 
 #work #stranger-w{
-  background-color: #EEE;
+  background-color: #FCCF52;
   color: #000;
 }
 
@@ -352,7 +358,7 @@ section, footer, #work{
   position: relative;
 }
 
-#work  .work:after{
+#work  article:after{
   content: "VIEW MORE";
   padding-top: 38px;
   font-size: 10px;
@@ -374,26 +380,26 @@ section, footer, #work{
   color: white;
 }
 
-.touchevents #work .work:after,
-#work  .work:hover:after{
+.touchevents #work article:after,
+#work  article:hover:after{
   transform: translateX(0);
   opacity: 1;
 }
 
-#work  #stranger-w:after,
-#work  #cointrust-w:after{
+#work  #stranger:after,
+#work  #cointrust:after{
   color: black;
   background-image: url(/next-dark.svg);
 }
 
-#work  #gripper-w:after{
+#work  #gripper:after{
   right: 330px;
 }
 
 
 
 #work article .content{
-  width: 300px;
+  width: 350px;
   vertical-align: top;
   display: inline-block;
 }
@@ -442,7 +448,8 @@ section, footer, #work{
 
 #fitclub .sample{
   bottom: -310px;
-  left: -30px;
+  left: -18%;
+  /*right: 0;*/
 }
 
 
@@ -459,13 +466,13 @@ section, footer, #work{
 
 #pepe .sample {
   bottom: -370px;
-  left: -40px;    
+  left: -17%;    
 }  
 
 
 #musa .sample {
   bottom: -360px;
-  left: -40px;    
+  left: -17%;    
 }  
 
 #work #cointrust h1 {
@@ -649,7 +656,7 @@ footer a:hover {
     margin-bottom: 50px;
   }
 
-  #work  .work:after{
+  #work  article:after{
     transform: translateX(0);
     opacity: 1;
     width: 25px;
