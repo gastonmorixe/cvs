@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 @font-face {
   font-family: 'Mono Social Icons Font';
@@ -210,6 +217,11 @@ section, footer, #work{
   position: relative;
 }
 
+#work article .cont{
+  /*display: inline-block;
+  float: left;*/
+}
+
 #work article.right{
   float: right;
   margin-right: 60px;        
@@ -383,13 +395,13 @@ section, footer, #work{
 
 
 #stranger .sample{
-  bottom: -240px;
+  bottom: -280px;
   left: 0px;
 }
 
 
 #audify .sample{
-  bottom: -200px;
+  bottom: -260px;
   left: -70px;
 }
 
@@ -399,7 +411,7 @@ section, footer, #work{
 }
 
 #fitclub .sample{
-  bottom: -250px;
+  bottom: -310px;
   left: -60px;
 }
 
@@ -410,19 +422,19 @@ section, footer, #work{
 }
 
 #gripper .sample {
-  top: -80px;
+  bottom: -270px;
   right: -80px;    
 }
 
 
 #pepe .sample {
-  bottom: -300px;
+  bottom: -370px;
   left: -70px;    
 }  
 
 
 #musa .sample {
-  bottom: -300px;
+  bottom: -360px;
   left: -80px;    
 }  
 
@@ -432,7 +444,7 @@ section, footer, #work{
 }
 
 #cointrust .sample {
-  top: -100px;
+  bottom: -180px;
   right: -90px;    
 }  
 
@@ -512,9 +524,14 @@ footer a:hover {
 
   #aboutme article{
     margin: 0;
+    min-width: 0;
     width: 100%;
     height: auto;
-    padding: 60px 60px;
+    padding: 30px 40px;
+  }
+
+  #work article .content{
+    width: auto;
   }
 
   #work{
@@ -523,8 +540,51 @@ footer a:hover {
 
   #work article{
     width: 100%;
-    margin-left: 0;    
+    min-width: 0;
+    margin-left: 0;
+    padding: 20px 0;
+    overflow: hidden;
   }
+
+  #work article .content {
+    width: 100% !important;
+  }
+
+  #work article .content, #work article h1{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #work article .sample-wrapper {
+    display: inline;
+  }
+
+  #work article .sample {
+    position: static;
+    perspective: 0;
+    width: 100%;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    display: inline-block;
+    /*background-color: red;*/
+    /*display: inline-block;*/
+  }
+
+  #work article .sample img{
+    width: 100%;
+    height: auto;
+  }
+
+  #work article .cont{
+    /*display: block;*/
+    /*padding: 20px;*/
+  }
+
+#work .work + .work {
+  margin-top: 0;
+}  
+
+
 
   #work article.right{
     float: left;
@@ -532,9 +592,9 @@ footer a:hover {
   }    
 
 
-  #work .sample{
+/*  #work .sample{
     transform: scale(0.9) !important;
   }    
-
+*/
 
 }
