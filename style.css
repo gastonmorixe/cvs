@@ -543,7 +543,7 @@ footer a:hover {
   }
 
   #work .work{
-    height: 450px;
+    height: auto;
   }
 
   #work article{
@@ -563,16 +563,23 @@ footer a:hover {
     padding-right: 30px;
   }
 
+  #work article h1{
+    line-height: 1.1;
+  }
+
   #work article .sample-wrapper {
     display: inline;
   }
 
   #work article .sample {
-    position: static;
+    position: relative;
+    bottom: -50px;
+    left: 0;
+    right: 0;
     perspective: 0;
     width: 100%;
     width: calc(100% + 60px);
-    margin: 0 -20px;
+    margin: 0 -30px;
     display: inline-block;
     /*background-color: red;*/
     /*display: inline-block;*/
