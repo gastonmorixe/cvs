@@ -65,7 +65,10 @@ body{
 a:link, a:visited, a:hover, a:active, a:focus {
   color: white;
   text-decoration: underline;
+  transition: all .3s;
+  transition-timing-function: cubic-bezier(.16,0,0,1);
 }
+
 a:hover {
   color: rgba(255,255,255,0.9);  
 }
@@ -94,7 +97,7 @@ strong{
   height: 100%;
 }
 
-section, footer, #work, #hi, #nowork{
+section, footer, #work, #hi, #nowork, #social{
   padding: 30px;  
   display: block;
   width: 100%;
@@ -145,9 +148,9 @@ section, footer, #work, #hi, #nowork{
 
 
 #nowork{
-   background-color: #FAFAFA;
-   padding-top: 60px;
-   padding-bottom: 60px;
+ background-color: #FAFAFA;
+ padding-top: 60px;
+ padding-bottom: 60px;
 }
 
 #nowork header{
@@ -196,6 +199,57 @@ section, footer, #work, #hi, #nowork{
   opacity: 1;
   /*margin-right: 30px;*/
 }
+
+#social{
+  padding: 0;
+  font-size: 5em;
+}
+
+#social ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;  
+  width: 100%;  
+  /*background-color: blue;*/
+}
+
+#social li{
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex: 1;
+  text-align: center;
+}
+
+#social a:link, 
+#social a:visited, 
+#social a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #D7E4E8;
+  transition: background-color .4s, transform .4s;
+  transition-timing-function: ease-in-out, cubic-bezier(.16,0,0,1);
+}
+
+#social a:hover{
+  transform: translateY(-10%);
+  background-color: #A7C7D1;
+}
+
+#social a:active{
+  transform: scale(.95);
+  background-color: #8A9A9F;
+}
+
+#social a:visited + a:visited,
+#social a:link + a:link{
+  box-shadow: 0 10px 0 rgba(255,255,255,1);
+}
+
+
 
 #nowork .apple { 
   background-image: url(/images/apple.svg)
@@ -371,7 +425,7 @@ section, footer, #work, #hi, #nowork{
 }
 
 #education{
-  background-color: #B0E77B;
+  background-color: #a1e959;
 }
 
 #aboutme article h1{
@@ -629,12 +683,41 @@ section, footer, #work, #hi, #nowork{
 }
 
 #misc a:link, 
-#misc a:hover, 
 #misc a:visited {
+  display: inline-block;
   color: black;
 }
 
-#misc, footer{
+#misc a:hover{
+  transform: translateX(.5em);
+  color: #666;
+}
+
+#misc a:active{
+  color: #bbb;
+}
+
+
+.lovee{
+  transition: all .3s ease-in-out;
+}
+
+*:hover > .lovee{
+  color: #FF9696;
+}
+
+.up {
+  transition: all .3s;
+  transition-timing-function: cubic-bezier(.16,0,0,1);
+  display: inline-block;
+}
+
+a:hover .up{
+  transform: translateY(-.5em);
+}
+
+#misc, 
+footer{
   color: black;
   font-size: 0.75em;
   letter-spacing: 1px;
@@ -805,17 +888,22 @@ footer a:hover {
     right: 30px !important;
   }
 
-#nowork h1{
-  line-height: 1.3;
+  #nowork h1{
+    line-height: 1.3;
+  }
+
+
+  #nowork li{
+
+    width: 50px;
+    height: 50px;
+  }
+
+
+#social{
+  padding: 0;
+  font-size: 2em;
 }
-
-
-#nowork li{
-  
-  width: 50px;
-  height: 50px;
-}
-
 /*  #work .sample{
     transform: scale(0.9) !important;
   }    
