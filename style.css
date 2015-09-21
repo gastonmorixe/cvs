@@ -40,8 +40,13 @@ a.symbol:hover{
 }
 a.symbol:before {
   content: attr(title);
-  margin-right: 0.3em;
-  font-size: 130%;
+  text-align: center;
+  font-size: 150%;
+  margin: auto;
+}
+
+a.symbol + a.symbol{
+  margin-left: .25em;
 }
 
 
@@ -125,6 +130,7 @@ section, footer, #work, #hi, #nowork, #social{
   animation: hiSlideOut 1s ease-in-out;
   animation-delay: 3.5s;
   animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.16,0,0,1);
   padding: 0;
 }
 
@@ -421,11 +427,11 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #intro {
-  background-color: #D2A9F3;
+  background-color: #91b2f0;
 }
 
 #education{
-  background-color: #a1e959;
+  background-color: #8be462;
 }
 
 #aboutme article h1{
