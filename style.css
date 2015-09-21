@@ -1,3 +1,7 @@
+:root:-webkit-full-screen-ancestor {
+    overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -117,6 +121,9 @@ section, footer, #work, #hi, #nowork, #social{
   }
 }
 
+.tlt{
+  visibility: hidden;
+}
 
 #hi{
   background-color: #FF9696;
@@ -129,12 +136,14 @@ section, footer, #work, #hi, #nowork, #social{
 
   animation: hiSlideOut 1s ease-in-out;
   animation-delay: 3.5s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.16,0,0,1);
   padding: 0;
 }
 
 @keyframes hiIn{
+  0%{ left: 50%; }
+  40%{ left: 50%; }
   to{ left: 0%; }
 }
 #hi header{
@@ -144,12 +153,12 @@ section, footer, #work, #hi, #nowork, #social{
   font-size: 3em;
   font-weight: 300;
   margin-left: .1em;
-  left: 50%;
+  left: 0%;
   transform: translate3d(0,0,0);
   position: relative;
   animation-fill-mode: both;
   animation: hiIn 1s ease-in-out;
-  animation-delay: .7s;
+  /*animation-delay: .7s;*/
 }
 
 
@@ -330,17 +339,13 @@ section, footer, #work, #hi, #nowork, #social{
   /*margin: 15px;*/
   position: relative;
   /*box-shadow: 0 0px 0px rgba(180, 180, 220, 0.2);*/
-  transition: .2s all ease; 
-
+  transition: .2s all ease;
+  /*background-color: #A7C7D1;*/
 }
 
-#aboutme article:hover{
-  z-index: 1;
-  position: relative;
-  /*transform: translateZ(10px);*/
-  /*box-shadow: 0 25px 30px rgba(180, 180, 220, 0.2);*/
+#aboutme article:nth-child(odd){
+  /*background-color: #A7C7D1;*/
 }
-
 
 #work{
   overflow-x: hidden;
@@ -427,11 +432,23 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #intro {
-  background-color: #91b2f0;
+  background-color: #FF9696;
 }
 
 #education{
-  background-color: #8be462;
+  background-color: #87ECC2;
+}
+
+#hobbies{
+  background-color: #F7E27B;
+}
+
+#geek{
+  background-color: #95E2F5;
+}
+
+#designer {
+  background-color: #DADADA;
 }
 
 #aboutme article h1{
@@ -468,17 +485,7 @@ section, footer, #work, #hi, #nowork, #social{
   background-image: url(/images/designer.svg);
 }    
 
-#hobbies{
-  background-color: #FFE668;
-}
 
-#geek{
-  background-color: #95E2F5;
-}
-
-#designer{
-  background-color: #FF9696;
-}
 
 #mepic{
   color: transparent;
@@ -526,6 +533,14 @@ section, footer, #work, #hi, #nowork, #social{
   color: #000;
 }
 
+#work #stranger-w,
+#work #stranger-w > a, 
+#work #stranger-w > a:link,
+#work #stranger-w > a:visited {
+  color: #000 !important;
+}
+
+
 #work #audify-w{
   background-color: #F3A8C7;
 }
@@ -537,6 +552,32 @@ section, footer, #work, #hi, #nowork, #social{
 #work #gripper-w{
   background-color: #B0D0F2;
 }  
+
+#work #fermata-w{
+  background-color: #CAAFF9;
+  position: relative;
+}
+
+#work #fermata-w .fvideo{
+  position: absolute;
+  /*z-index: -1;*/
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;  
+}
+
+#work #fermata-w video{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 
 #work #pepe-w{
   background-color: #73D93D;
