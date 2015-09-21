@@ -478,7 +478,8 @@ section, footer, #work, #hi, #nowork, #social{
   color: transparent;
   background: url(/images/profile.jpg) no-repeat 50% 50%;
   background-size: 100%;
-  transition: all .35s ease-in-out;
+  transition: all .35s;
+  transition-timing-function: cubic-bezier(.16,0,0,1);
 }
 
 #mepic:hover{
