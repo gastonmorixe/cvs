@@ -618,6 +618,10 @@ section, footer, #work, #hi, #nowork, #social{
   color: white;
 }
 
+.touchevents #fermata-w{
+  display: none;
+}
+
 .touchevents #work article:after,
 #work  article:hover:after{
   transform: translateX(0);
@@ -951,6 +955,10 @@ footer a:hover {
 #social{
   padding: 0;
   font-size: 2em;
+}
+
+#fermata-w{
+  display: none;
 }
 /*  #work .sample{
     transform: scale(0.9) !important;
