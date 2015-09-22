@@ -64,22 +64,23 @@ body{
   margin: 0;
   padding: 0;
   line-height: 2;
-  color: white;
+  color:  rgba(0,0,0,.35);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  fill: currentColor;  
   /*overflow-x: hidden;*/
   /*font-weight: lighter;*/
 }
 
 a:link, a:visited, a:hover, a:active, a:focus {
-  color: white;
+  color:  rgba(0,0,0,.40);
   text-decoration: underline;
   transition: all .3s;
   transition-timing-function: cubic-bezier(.16,0,0,1);
 }
 
 a:hover {
-  color: rgba(255,255,255,0.9);  
+  color:  rgba(0,0,0,.60);
 }
 
 
@@ -126,19 +127,22 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #hi{
-  background-color: #FF9696;
+  background-color: #30B3FA;
   height: 100%;
   /*min-height: 50px;*/
   overflow: hidden;
   display: flex;
   align-items: center;
   /*transition: all .3s ease-in-out;*/
-
-  animation: hiSlideOut 1s ease-in-out;
-  animation-delay: 3.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.16,0,0,1);
+  color: white;
   padding: 0;
+}
+
+body.ready #hi{
+  animation: hiSlideOut 1s ease-in-out;
+  animation-delay: 4.0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.16,0,0,1);  
 }
 
 @keyframes hiIn{
@@ -156,13 +160,18 @@ section, footer, #work, #hi, #nowork, #social{
   left: 0%;
   transform: translate3d(0,0,0);
   position: relative;
-  animation-fill-mode: both;
-  animation: hiIn 1s ease-in-out;
-  /*animation-delay: .7s;*/
+  animation-delay: .7s;
 }
 
+body.ready #hi h1{
+  animation-fill-mode: both;
+  animation: hiIn 1s ease-in-out;  
+}
 
 #nowork{
+ margin-top: -1px;
+ position: relative;
+ z-index: 1;
  background-color: #FAFAFA;
  padding-top: 60px;
  padding-bottom: 60px;
@@ -244,6 +253,7 @@ section, footer, #work, #hi, #nowork, #social{
   width: 100%;
   height: 100%;
   display: inline-block;
+  color: white;
   background-color: #D7E4E8;
   transition: background-color .4s, transform .4s;
   transition-timing-function: ease-in-out, cubic-bezier(.16,0,0,1);
@@ -338,14 +348,37 @@ section, footer, #work, #hi, #nowork, #social{
   /*float: left;*/
   /*margin: 15px;*/
   position: relative;
-  /*box-shadow: 0 0px 0px rgba(180, 180, 220, 0.2);*/
+  box-shadow: 1px 1px 0px #f0f0f0;
   transition: .2s all ease;
   /*background-color: #A7C7D1;*/
+
 }
+
+
 
 #aboutme article:nth-child(odd){
   /*background-color: #A7C7D1;*/
 }
+
+/*#intro{
+  color: #FF9696;
+}*/
+
+/*#education{
+  color: #87ECC2;
+}
+*/
+/*#hobbies{
+  color: #F7E27B;
+}*/
+
+/*#geek{
+  color: #95E2F5;
+}
+*/
+/*#designer {
+  color: #DADADA;
+}*/
 
 #work{
   overflow-x: hidden;
@@ -418,7 +451,7 @@ section, footer, #work, #hi, #nowork, #social{
   line-height: 1;
   font-size: 10em;
   font-weight: 200;
-  color: #fafafa;
+  color: #E3E9EC;
   position: absolute;
   right: -.1em;
   /*float: left;*/
@@ -431,25 +464,7 @@ section, footer, #work, #hi, #nowork, #social{
   left: -.1em;
 }
 
-#intro {
-  background-color: #FF9696;
-}
 
-#education{
-  background-color: #87ECC2;
-}
-
-#hobbies{
-  background-color: #F7E27B;
-}
-
-#geek{
-  background-color: #95E2F5;
-}
-
-#designer {
-  background-color: #DADADA;
-}
 
 #aboutme article h1{
   background: url(/images/edu.svg) no-repeat left top;
@@ -513,7 +528,13 @@ section, footer, #work, #hi, #nowork, #social{
   text-align: left;
 }
 
+
+#work{
+  color: white;
+}
+
 .work > a:link{
+  color: white;
   text-decoration: none;
 }
 
@@ -529,7 +550,7 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #work #stranger-w{
-  background-color: #eee;
+  background-color: #f8f8f8;
   color: #000;
 }
 
@@ -568,12 +589,19 @@ section, footer, #work, #hi, #nowork, #social{
   height: 100%;
   width: 100%;
   margin: auto;  
+  /*overflow: hidden;*/
 }
 
 #work #fermata-w video{
   margin: 0;
+  /*position: relative;*/
+  /*top: 50px;*/
+  float: left;  
   width: 100%;
   height: 100%;
+  /*margin-top: px;*/
+  /*padding-bottom: 150px;*/
+  /*box-sizing: content-box;*/
   object-fit: cover;
   pointer-events: none;
 }
@@ -664,7 +692,7 @@ section, footer, #work, #hi, #nowork, #social{
 
 #work article .sample-wrapper{
   display: inline-block;
-  transition: .4s all ease;  
+  transition: .6s all cubic-bezier(.16,0,0,1);  
 }
 
 #work article:hover .sample-wrapper{
@@ -769,7 +797,7 @@ a:hover .up{
 }
 
 #misc, 
-footer{
+#footer{
   color: black;
   font-size: 0.75em;
   letter-spacing: 1px;
@@ -785,16 +813,16 @@ footer{
   break-inside: avoid;
 }
 
-footer{
-  margin: 50px 0;
+#footer{
+  margin: 150px 0 50px;
 }
 
-footer a:link, 
-footer a:visited {
+#footer a:link, 
+#footer a:visited {
   color: black;
 }
 
-footer a:hover {
+3footer a:hover {
   color: #82A4CA;
 }
 
@@ -951,11 +979,17 @@ footer a:hover {
     height: 50px;
   }
 
+  #footer{
+    margin: 50px 0;
+  }
+
 
 #social{
   padding: 0;
   font-size: 2em;
+
 }
+
 
 #fermata-w{
   display: none;

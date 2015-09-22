@@ -63,7 +63,7 @@
         <div class="cont" data-parallax='{"y": -0, "smoothness": 10}'><p>Me</p></div>
       </article><article id="intro">
       <div class="cont" data-parallax='{"y": -0, "smoothness": 10}'>
-        <p class="big">Hi! 😎</p>
+        <p class="big">😎</p>
         <p>I’m <strong>Gaston Morixe</strong>, 22, <a href="https://www.google.com.uy/#q=montevideo+uruguay">Uruguayan</a> &amp; Spanish.</p>
         <p>Crazy senior in iOS, Ruby &amp; UI design.</p>
         <p><a href='https://www.facebook.com/profile.php?id=1171410463' class='symbol' title='circlefacebook'></a> <a href='http://twitter.com/gastn___' class='symbol' title='circletwitterbird'></a> <a href='http://instagram.com/gastn___' class='symbol' title='circleinstagram'></a> <a href='http://github.com/imton' class='symbol' title='circlegithub'></a> <a href='http://uy.linkedin.com/in/imton' class='symbol' title='circlelinkedin'></a></p>
@@ -350,9 +350,13 @@
     $('img').srcset();
 
     $(function () {
-      $('.hi-1').textillate({ initialDelay: 50 });
-      $('.hi-2').textillate({ initialDelay: 600 });
-      $('.hi-3').textillate({ initialDelay: 1000 });
+      setTimeout(function(){
+        $('.hi-1').textillate({ initialDelay: 50 });
+        $('.hi-2').textillate({ initialDelay: 600 });
+        $('.hi-3').textillate({ initialDelay: 1000 });
+        $('body').addClass('ready')        
+      }, 100);
+      
     });    
   });
 </script>
