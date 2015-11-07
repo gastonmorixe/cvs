@@ -127,14 +127,14 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #hi{
-  background-color: #30B3FA;
+  background-color: #FFFFFF;
   height: 100%;
   /*min-height: 50px;*/
   overflow: hidden;
   display: flex;
   align-items: center;
   /*transition: all .3s ease-in-out;*/
-  color: white;
+  color: #000000;
   padding: 0;
 }
 
@@ -624,7 +624,7 @@ body.ready #hi h1{
   position: relative;
 }
 
-#work  article:after{
+/*#work  article:after{
   content: "VIEW MORE";
   padding-top: 38px;
   font-size: 10px;
@@ -644,7 +644,7 @@ body.ready #hi h1{
   transform: translateX(20px);
   opacity: 0;
   color: white;
-}
+}*/
 
 .touchevents #fermata-w{
   display: none;
