@@ -64,8 +64,8 @@ body{
   margin: 0;
   padding: 0;
   line-height: 2;
-  color:  rgba(0,0,0,.35);
-  font-family: 'Source Sans Pro', sans-serif;
+  color:  rgba(0,0,0,.1.0);
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 16px;
   fill: currentColor;  
   /*overflow-x: hidden;*/
@@ -73,14 +73,14 @@ body{
 }
 
 a:link, a:visited, a:hover, a:active, a:focus {
-  color:  rgba(0,0,0,.40);
+  color:  rgba(0,0,255,1.0);
   text-decoration: underline;
   transition: all .3s;
   transition-timing-function: cubic-bezier(.16,0,0,1);
 }
 
 a:hover {
-  color:  rgba(0,0,0,.60);
+  color:  rgba(0,0,0,);
 }
 
 
@@ -108,7 +108,7 @@ strong{
 }
 
 section, footer, #work, #hi, #nowork, #social{
-  padding: 30px;  
+  padding: 30px;
   display: block;
   width: 100%;
   float: left;
@@ -130,11 +130,12 @@ section, footer, #work, #hi, #nowork, #social{
   background-color: #FFFFFF;
   height: 90px;
   /*min-height: 50px;*/
+  height: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   /*transition: all .3s ease-in-out;*/
-  color: #DDD;
+  font-weight: 200;
   padding: 0;
 }
 
@@ -151,7 +152,7 @@ section, footer, #work, #hi, #nowork, #social{
   to{ left: 0%; }
 }*/
 #hi header{
-  margin: 30px;
+ 
 }
 #hi h1{
   font-size: 3em;
@@ -166,9 +167,9 @@ section, footer, #work, #hi, #nowork, #social{
  margin-top: -1px;
  position: relative;
  z-index: 1;
- background-color: #FAFAFA;
+ /*background-color: #FAFAFA;*/
  padding-top: 60px;
- padding-bottom: 60px;
+ padding-bottom: 0;
 }
 
 #nowork header{
@@ -186,7 +187,7 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 #nowork h1 span{
-  color: #bbb;
+  color: #000;
   margin-left: .3em;
 }
 
@@ -209,7 +210,7 @@ section, footer, #work, #hi, #nowork, #social{
   background-repeat: no-repeat;
   text-align: center;
   background-position: 50% 50%;
-  opacity: .3;
+  opacity: .9;
   transition: all .3s ease-in-out;
 }
 
@@ -248,14 +249,15 @@ section, footer, #work, #hi, #nowork, #social{
   height: 100%;
   display: inline-block;
   color: white;
-  background-color: #D7E4E8;
+  background-color: #0000ff;
   transition: background-color .4s, transform .4s;
   transition-timing-function: ease-in-out, cubic-bezier(.16,0,0,1);
 }
 
 #social a:hover{
   transform: translateY(-10%);
-  background-color: #A7C7D1;
+  background-color: #ffffff;
+  color: blue;
 }
 
 #social a:active{
@@ -272,6 +274,11 @@ section, footer, #work, #hi, #nowork, #social{
 
 #nowork .apple { 
   background-image: url(/images/apple.svg)
+}
+
+#nowork .headspace { 
+  background-image: url(/images/headspace.png);
+  height: 200px;
 }
 
 #nowork .airbnb { 
@@ -294,9 +301,11 @@ section, footer, #work, #hi, #nowork, #social{
 
 #hi h2{
   left: 50%;
-  font-size: 11em;
-  font-weight: 600;
-  letter-spacing: -.05em;
+  font-size: 4em;
+  font-weight: 200;
+  margin-left: 1em;
+  color: black;
+  letter-spacing: 0;
 }
 
 #work{
@@ -307,6 +316,7 @@ section, footer, #work, #hi, #nowork, #social{
   width: 100%;
   padding: 0;
   perspective: 600px;
+
   /*background-color: #505254;*/
   perspective-origin: 50% 50%;      
 }
@@ -342,7 +352,7 @@ section, footer, #work, #hi, #nowork, #social{
   /*float: left;*/
   /*margin: 15px;*/
   position: relative;
-  box-shadow: 1px 1px 0px #f0f0f0;
+  box-shadow: 1px 0px 0px 1px #f0f0f0;
   transition: .2s all ease;
   /*background-color: #A7C7D1;*/
 
@@ -433,8 +443,9 @@ section, footer, #work, #hi, #nowork, #social{
 }  
 
 #work .work + .work {
-  margin-top: 450px;
+  margin-top: 350px;
 }
+
 
 #work .work:last-child{
   margin-bottom: 200px;
@@ -445,7 +456,8 @@ section, footer, #work, #hi, #nowork, #social{
   line-height: 1;
   font-size: 10em;
   font-weight: 200;
-  color: #E3E9EC;
+  font-weight: 100;
+  color: blue;
   position: absolute;
   right: -.1em;
   /*float: left;*/
@@ -543,6 +555,17 @@ section, footer, #work, #hi, #nowork, #social{
   font-weight: 200;
 }
 
+#work #primerdoctor{
+  color: #fff;
+}
+
+#work #primerdoctor-w,
+#work #primerdoctor-w > a, 
+#work #primerdoctor-w > a:link,
+#work #primerdoctor-w > a:visited {
+  color: #fff !important;
+}
+
 #work #stranger-w{
   background-color: #f8f8f8;
   color: #000;
@@ -558,6 +581,13 @@ section, footer, #work, #hi, #nowork, #social{
 
 #work #audify-w{
   background-color: #F3A8C7;
+}
+
+#work #primerdoctor-w{
+  background-color: #12C0D1;
+}
+#work #primerdoctor-w img{
+  width: 100%;
 }
 
 #work #fitclub-w{
@@ -694,6 +724,11 @@ section, footer, #work, #hi, #nowork, #social{
 }
 
 
+#primerdoctor .sample{
+  bottom: -550px;
+  left: 0px;
+}
+
 #stranger .sample{
   bottom: -280px;
   left: 0px;
@@ -759,16 +794,16 @@ section, footer, #work, #hi, #nowork, #social{
 #misc a:link, 
 #misc a:visited {
   display: inline-block;
-  color: black;
+
 }
 
 #misc a:hover{
   transform: translateX(.5em);
-  color: #666;
+
 }
 
 #misc a:active{
-  color: #bbb;
+
 }
 
 
@@ -811,14 +846,7 @@ a:hover .up{
   margin: 150px 0 50px;
 }
 
-#footer a:link, 
-#footer a:visited {
-  color: black;
-}
 
-3footer a:hover {
-  color: #82A4CA;
-}
 
 
 @media (max-width: 1320px) {
