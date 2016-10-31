@@ -2,11 +2,8 @@
     overflow: hidden;
 }
 
-html {
-  box-sizing: border-box;
-}
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -135,8 +132,8 @@ section, footer, #work, #hi, #nowork, #social{
   display: flex;
   align-items: center;
   /*transition: all .3s ease-in-out;*/
-  font-weight: 200;
-  padding: 60px 25px;
+  
+  padding: 25px 25px 25px;
 }
 
 /*body.ready #hi{
@@ -156,7 +153,7 @@ section, footer, #work, #hi, #nowork, #social{
 }
 #hi h1{
   font-size: 3em;
-  font-weight: 300;
+  font-weight: 200;
   margin-left: 0;
   left: 0%;
   position: relative;
@@ -317,14 +314,6 @@ section, footer, #work, #hi, #nowork, #social{
   padding: 25px;
 }
 
-#aboutme .roww {
-  /*margin: -15px;*/
-  margin: 0;
-  display: flex;
-  width: 100%;
-  align-items: stretch;
-  align-content: stretch;
-}
 
 #aboutme .cont{
   /*background: blue;*/
@@ -342,7 +331,7 @@ section, footer, #work, #hi, #nowork, #social{
   width: 100%;
 
   
-  min-width: 400px;
+  
   
   /*display: inline-block;*/
   /*float: left;*/
@@ -944,7 +933,7 @@ a:hover .up{
     width: 100%;
     min-width: 0;
     margin-left: 0;
-    padding: 40px 0;
+    padding: 0;
     overflow: hidden;
   }
 
