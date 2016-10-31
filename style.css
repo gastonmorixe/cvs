@@ -65,7 +65,7 @@ body{
   padding: 0;
   line-height: 2;
   color:  rgba(0,0,0,.1.0);
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 16px;
   fill: currentColor;  
   /*overflow-x: hidden;*/
@@ -539,7 +539,9 @@ section, footer, #work, #hi, #nowork, #social{
   color: white;
 }
 
-.work > a:link{
+
+.work > a:link,
+.work > a:visited{
   color: white;
   text-decoration: none;
 }
@@ -554,6 +556,19 @@ section, footer, #work, #hi, #nowork, #social{
 #work h1 .light{
   font-weight: 200;
 }
+
+
+#work #mrthumb{
+  color: #ffffff;
+}
+
+#work #mrthumb-w,
+#work #mrthumb-w > a, 
+#work #mrthumb-w > a:link,
+#work #mrthumb-w > a:visited {
+  color: #ffffff !important;
+}
+
 
 #work #primerdoctor{
   color: #fff;
@@ -583,10 +598,19 @@ section, footer, #work, #hi, #nowork, #social{
   background-color: #F3A8C7;
 }
 
+#work #mrthumb-w{
+  background-color: #1782FF;
+}
+
 #work #primerdoctor-w{
   background-color: #12C0D1;
 }
+
 #work #primerdoctor-w img{
+  width: 100%;
+}
+
+#work #mrthumb-w img{
   width: 100%;
 }
 
@@ -723,6 +747,10 @@ section, footer, #work, #hi, #nowork, #social{
   transform: translateZ(30px);
 }
 
+#mrthumb .sample{
+  bottom: -500px;
+  left: 0px;
+}
 
 #primerdoctor .sample{
   bottom: -550px;
@@ -736,7 +764,7 @@ section, footer, #work, #hi, #nowork, #social{
 
 
 #audify .sample{
-  bottom: -260px;
+  bottom: -350px;
   left: -70px;
 }
 
