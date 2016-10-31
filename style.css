@@ -128,15 +128,15 @@ section, footer, #work, #hi, #nowork, #social{
 
 #hi{
   background-color: #FFFFFF;
-  height: 90px;
+  
   /*min-height: 50px;*/
-  height: 50%;
+  
   overflow: hidden;
   display: flex;
   align-items: center;
   /*transition: all .3s ease-in-out;*/
   font-weight: 200;
-  padding: 0;
+  padding: 60px 25px;
 }
 
 /*body.ready #hi{
@@ -157,7 +157,7 @@ section, footer, #work, #hi, #nowork, #social{
 #hi h1{
   font-size: 3em;
   font-weight: 300;
-  margin-left: .1em;
+  margin-left: 0;
   left: 0%;
   position: relative;
 }
@@ -303,7 +303,7 @@ section, footer, #work, #hi, #nowork, #social{
   left: 50%;
   font-size: 4em;
   font-weight: 200;
-  margin-left: 1em;
+  /*margin-left: 1em;*/
   color: black;
   letter-spacing: 0;
 }
@@ -314,11 +314,7 @@ section, footer, #work, #hi, #nowork, #social{
 
 #aboutme{
   width: 100%;
-  padding: 0;
-  perspective: 600px;
-
-  /*background-color: #505254;*/
-  perspective-origin: 50% 50%;      
+  padding: 25px;
 }
 
 #aboutme .roww {
@@ -333,27 +329,26 @@ section, footer, #work, #hi, #nowork, #social{
 #aboutme .cont{
   /*background: blue;*/
   width: 100%;
-  max-width: 380px;
   margin: 0 auto;
   text-align: left;
 }
 
+#aboutme article + article{
+  margin-top: 60px;
+}
 #aboutme article{
   text-align: center;
   vertical-align: top;
-  width: 33.33%;
-  height: 400px;
-  min-width: 430px;
-  /*margin: 15px;*/
-  display: inline-flex;
-  flex: 1;
-  padding: 60px;
+  width: 100%;
+
+  
+  min-width: 400px;
+  
   /*display: inline-block;*/
   /*float: left;*/
   /*margin: 15px;*/
   position: relative;
-  box-shadow: 1px 0px 0px 1px #f0f0f0;
-  transition: .2s all ease;
+  
   /*background-color: #A7C7D1;*/
 
 }
@@ -478,7 +473,7 @@ section, footer, #work, #hi, #nowork, #social{
   line-height: 1;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   transition: all .4s ease;
 }
 
@@ -491,7 +486,7 @@ section, footer, #work, #hi, #nowork, #social{
 
 #aboutme article:hover h1, 
 #aboutme article:hover .big{
-  transform: translateX(20px);
+  /*transform: translateX(20px);*/
 }
 
 #aboutme #hobbies h1{
@@ -506,32 +501,44 @@ section, footer, #work, #hi, #nowork, #social{
   background-image: url(/images/designer.svg);
 }    
 
-
+.profile{
+  border-radius: 50%;
+}
 
 #mepic{
+  min-width: 0 !important;
+  width: 200px !important;
+  height: 200px !important;
   color: transparent;
   background: url(/images/profile.jpg) no-repeat 50% 50%;
   background-size: 100%;
-  transition: all .35s;
-  transition-timing-function: cubic-bezier(.16,0,0,1);
+  display: block;
+  margin: auto !important;
+  border-radius: 50%;
 }
 
 #mepic:hover{
-  background-size: 115%;
+  
 }
 
 
 #aboutme .col img{
-  /*width*/: 100%;
   height: 40px;
   margin-bottom: 15px
 }
+#aboutme article h1{
+  margin-bottom: 1em
+}
 #aboutme .cols{
   display: flex;   
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 #aboutme .col{
   text-align: left;
+}
+
+#aboutme .col  + .col{
+  margin-left: 40px;
 }
 
 
@@ -879,17 +886,17 @@ a:hover .up{
 
 @media (max-width: 1320px) {
   #aboutme article{
-    min-width: 400px;
-    padding: 60px 45px;
+    /*min-width: 400px;*/
+   
   }
 
 }
 
 @media (max-width: 1200px) {
   #aboutme article{
-    min-width: 300px;
-    height: 350px;
-    padding: 45px 45px;
+    /*min-width: 300px;*/
+    
+    
   }
 
 }
@@ -898,10 +905,7 @@ a:hover .up{
 
   }
   #aboutme article{
-    margin: 0;
-    width: 50%;
-    height: 400px;
-    padding: 60px 60px;
+    
   }
 
 }
@@ -914,10 +918,10 @@ a:hover .up{
 
   #aboutme article{
     margin: 0;
-    min-width: 0;
+    /*min-width: 0;*/
     width: 100%;
     height: auto;
-    padding: 30px 40px;
+    
   }
 
   #work article h1{
