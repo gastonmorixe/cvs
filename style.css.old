@@ -62,7 +62,7 @@ body{
   padding: 0;
   line-height: 2;
   color:  rgba(0,0,0,.1.0);
-  font-family:  'Overpass Mono', Monaco, monospace; /* 'Helvetica Neue', 'Helvetica', sans-serif; */
+  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 16px;
   fill: currentColor;  
   /*overflow-x: hidden;*/
@@ -111,33 +111,6 @@ section, footer, #work, #hi, #nowork, #social{
   float: left;
   clear: both;
 }
-
-
-body{
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-#sidebar {
-  width:  300px;
-  overflow-y: auto;
-  overflow-x:  hidden;
-}
-
-#content{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#content  > * {
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
 
 
 /*@keyframes hiSlideOut{
@@ -324,19 +297,15 @@ body{
 
 
 #hi h2{
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   left: 50%;
   font-size: 4em;
-  font-weight: 600;
+  font-weight: 200;
   /*margin-left: 1em;*/
   color: black;
   letter-spacing: 0;
-  background: yellow;
 }
 
 #work{
-  display: flex;
-  flex-direction: column;
   padding: 0;
 }
 
@@ -383,11 +352,10 @@ body{
   color: #FF9696;
 }*/
 
-#education{
-  display: none;
+/*#education{
   color: #87ECC2;
 }
-
+*/
 /*#hobbies{
   color: #F7E27B;
 }*/
@@ -401,7 +369,7 @@ body{
 }*/
 
 #work{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 #work article h1{
@@ -523,10 +491,7 @@ body{
 }    
 
 .profile{
-  /* border-radius: 50%; */
-  position: relative;
-  left: 30px;
-  top: 10px;
+  border-radius: 50%;
 }
 
 #mepic{
@@ -935,39 +900,6 @@ a:hover .up{
 }
 
 @media (max-width: 940px) {
-@media (max-width: 400px) {
-    #hi h2{
-    font-size: 2em;
-  }
-}
-
-
-
-  body{
-    flex-direction: column;
-    align-items: stretch;
-    overflow-y: auto;
-    display: block;
-  }
-
-  #sidebar {
-    width:  auto;
-    overflow-y: hidden;
-    overflow-x:  hidden;
-    display: block;
-    height: auto;
-  }
-
-  #content{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    width: auto;
-    height: auto;
-    flex:  auto;
-    display: block;
-  }
-  #content  > * {
-  }
 
   #hi h2{
     font-size: 5em;
