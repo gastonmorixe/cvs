@@ -140,6 +140,11 @@ body{
 
 
 
+.rate {
+  color:  white;
+  background: blue url(http://i.giphy.com/EO9j0o6pHdYmk.gif);
+}
+
 /*@keyframes hiSlideOut{
   to{ 
     height: 0px;
@@ -322,16 +327,20 @@ body{
 }
 
 
-
+#hi {
+  background: yellow;
+}
 #hi h2{
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   left: 50%;
+  background:  yellow url(http://i.giphy.com/42YCuyJLaR3aM.gif);
+  -webkit-background-clip:  text;
+  color:  transparent;
   font-size: 4em;
   font-weight: 600;
   /*margin-left: 1em;*/
-  color: black;
+  /* color: black; */
   letter-spacing: 0;
-  background: yellow;
 }
 
 #work{
