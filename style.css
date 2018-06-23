@@ -58,11 +58,6 @@ a.symbol + a.symbol {
   margin-left: 0.25em;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -130,11 +125,21 @@ body {
   display: flex;
   flex-direction: row;
 }
-.hello body {
+/* .hello body {
   overflow: hidden;
+} */
+
+#sidebar-fake {
+  width: 290px;
 }
+
 #sidebar {
   width: 300px;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  /* height: 80%; */
+  position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -339,7 +344,7 @@ body {
 }
 
 #hi {
-  background: rgba(0, 0, 0, 0.1) url(./images/colors.gif);
+  background: rgb(230, 230, 230) url(./images/colors.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -953,7 +958,12 @@ a:hover .up {
     display: block;
   }
 
+  #sidebar-fake {
+    display: none;
+  }
+
   #sidebar {
+    position: static !important;
     width: auto;
     overflow-y: hidden;
     overflow-x: hidden;
