@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head class="home">
 
   <!-- 
@@ -30,25 +31,25 @@
                                 
 -->
 
-<meta charset="UTF-8">
-<title>Gastón Morixe</title>
+  <meta charset="UTF-8">
+  <title>Gastón Morixe</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700" rel="stylesheet">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" type='text/css' href="/style.css?v2990">
-<link rel="stylesheet" type='text/css' href="//cdn.rawgit.com/daneden/animate.css/master/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="/style.css?v566">
+  <link rel="stylesheet" type='text/css' href="//cdn.rawgit.com/daneden/animate.css/master/animate.min.css">
 
 
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="//cdn.rawgit.com/jcampbell1/jquery-srcset-retina-polyfill/master/jquery.srcset.js"></script>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//cdn.rawgit.com/jcampbell1/jquery-srcset-retina-polyfill/master/jquery.srcset.js"></script>
 
-<script src="/modernizr.js"></script>
+  <script src="/modernizr.js"></script>
 
 </head>
 
@@ -58,9 +59,11 @@
 
     <section id="hi">
       <header>
-        <img src="https://avatars2.githubusercontent.com/u/637225?s=400&u=8cace7b6d90bdd33ed63c65763a9fc1fa4fb920c&v=4" width=200 height=200 alt="Gaston Morixe" class="profile">
+        <img src="https://avatars2.githubusercontent.com/u/637225?s=400&u=8cace7b6d90bdd33ed63c65763a9fc1fa4fb920c&v=4" width=200
+          height=200 alt="Gaston Morixe" class="profile">
         <h2 class="tlt hi-1">Gast&oacute;n Morixe</h2>
-        <p>gaston@influr.agency<br>+1 (323) 642-7866</p>
+        <p class="contact">gaston@gastonmorixe.com
+          <br>+1 (323) 642-7866</p>
       </header>
     </section>
 
@@ -68,9 +71,12 @@
 
       <article id="intro">
         <div class="cont">
-          <p>Visual Artist &amp; Hacker.</p>
+          <p>
+            <strong>Visual Artist &amp; Engineer</strong>
+          </p>
           <p class="rate" style="display: none">Rate 50-150$ //hr</p>
-          <p>React + React Native // GraphQL (Apollo) // Redux, Sagas, Thunks, Watchers, Promises // iOS Obj-C + Swift // JS ES6+ HTML5 SASS // Rails</p>
+          <p>React + React Native // GraphQL (Apollo) // Redux, Sagas, Thunks, Watchers, Promises // iOS Obj-C + Swift // JS
+            ES6+ HTML5 SASS // Rails</p>
         </div>
       </article>
     </section>
@@ -79,7 +85,47 @@
   <div id="content">
     <section id="work">
 
-      <header><h1><span data-parallax='{"y": -50, "x": 10}'>work</span></h1></header>
+      <section id="social">
+        <ul>
+          <li>
+            <a href='https://www.facebook.com/gastonmorixe' class='fb symbol' title='facebook'></a>
+          </li>
+          <li>
+            <a href='http://linkedin.com/in/gastonmorixe' class='ln symbol' title='linkedin'></a>
+          </li>
+          <li>
+            <a href='http://instagram.com/gastonmorixe' class='ig symbol' title='instagram'></a>
+          </li>
+          <li>
+            <a href='http://github.com/gastonmorixe' class='gh symbol' title='github'></a>
+          </li>
+        </ul>
+      </section>
+
+      <header>
+        <h1>
+          <span data-parallax='{"y": -50, "x": 10}'>work</span>
+        </h1>
+      </header>
+
+
+      <div class="work" id="palm-w">
+
+        <aside class="year" data-parallax='{"y": -100, "x": 20}'>2017</aside>
+
+        <article id="palm">
+          <h1>Palm</h1>
+          <div class="content">
+            <p>Product designer</p>
+            <p class="sample" data-parallax='{"y": -50}'>
+              <span class="sample-wrapper">
+                <img src="/images/samples/palm.png" srcset="/images/samples/palm@2x.png 2x">
+              </span>
+            </p>
+          </div>
+        </article>
+
+      </div>
 
 
       <div class="work" id="mrthumb-w">
@@ -87,10 +133,16 @@
           <aside class="year" data-parallax='{"y": -100, "x": 20}'>2016</aside>
 
           <article id="mrthumb">
-            <h1>MrThumb.io <span class="light">client</span></h1>  
+            <h1>MrThumb.io
+              <span class="light">client</span>
+            </h1>
             <div class="content">
               <p>(Soon, early 2017) UI+UX. Branding of a SAAS image processing company</p>
-              <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/mrthumb.png" srcset="/images/samples/mrthumb@2x.png 2x"></span></p>
+              <p class="sample" data-parallax='{"y": -50}'>
+                <span class="sample-wrapper">
+                  <img src="/images/samples/mrthumb.png" srcset="/images/samples/mrthumb@2x.png 2x">
+                </span>
+              </p>
             </div>
           </article>
         </a>
@@ -101,10 +153,16 @@
 
           <article id="primerdoctor" class="">
             <!-- <a class="bigh" href="http://audify.io"> -->
-            <h1>1Dr. <span class="light">client</span></h1>  
+            <h1>1Dr.
+              <span class="light">client</span>
+            </h1>
             <div class="content">
               <p>Complete UI+UX, React + Rails Realtime Chat with Action Cable.</p>
-              <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/primerdoctor.png" srcset="/images/samples/primerdoctor@2x.png 2x"></span></p>
+              <p class="sample" data-parallax='{"y": -50}'>
+                <span class="sample-wrapper">
+                  <img src="/images/samples/primerdoctor.png" srcset="/images/samples/primerdoctor@2x.png 2x">
+                </span>
+              </p>
             </div>
           </article>
         </a>
@@ -116,11 +174,18 @@
 
           <article id="stranger">
             <!-- <a class="bigh" href="http://audify.io"> -->
-            <h1>stranger <span class="light">co-founder</span></h1>  
+            <h1>stranger
+              <span class="light">co-founder</span>
+            </h1>
             <div class="content">
               <p>Meet people, live! Video dating done right.</p>
-              <p><strong>Tech</strong> iOS + WebRTC. Rails API + Redis + PG + Pusher. Fully-Dockerized.</p>
-              <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/stranger.png" srcset="/images/samples/stranger@2x.png 2x"></span></p>
+              <p>
+                <strong>Tech</strong> iOS + WebRTC. Rails API + Redis + PG + Pusher. Fully-Dockerized.</p>
+              <p class="sample" data-parallax='{"y": -50}'>
+                <span class="sample-wrapper">
+                  <img src="/images/samples/stranger.png" srcset="/images/samples/stranger@2x.png 2x">
+                </span>
+              </p>
             </div>
           </article>
         </a>
@@ -131,12 +196,19 @@
         <a href="http://audify.io">
           <article id="audify" class="right">
             <!-- <a class="bigh" href="http://audify.io"> -->
-            <h1>audify.io <span class="light">CTO</span></h1>  
+            <h1>audify.io
+              <span class="light">CTO</span>
+            </h1>
             <div class="content">
               <p>Programatic advertising network from scratch.</p>
               <p>With million hits dialy. I architected a custom realtime multi-dimensional analytics + ad engine.</p>
-              <p><strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
-              <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/audify.png" srcset="/images/samples/audify@2x.png 2x"></span></p>
+              <p>
+                <strong>Tech</strong> RubyOnRails + Redis + PG. Fully-Dockerized.</p>
+              <p class="sample" data-parallax='{"y": -50}'>
+                <span class="sample-wrapper">
+                  <img src="/images/samples/audify.png" srcset="/images/samples/audify@2x.png 2x">
+                </span>
+              </p>
             </div>
             <!-- </a> -->
           </article>
@@ -145,41 +217,68 @@
 
       <div class="work" id="fitclub-w">
         <article id="fitclub">
-          <h1>fitclub <span class="light">client</span></h1>
+          <h1>fitclub
+            <span class="light">client</span>
+          </h1>
           <div class="content">
             <p>All your city sport activity in one marketplace.</p>
-            <p><strong>Full UI +  Branding</strong></p>
-            <p><strong>Tech</strong> RubyOnRails + Mongo.</p>
-            <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/fitclub.png" srcset="/images/samples/fitclub@2x.png 2x"></span></p>
+            <p>
+              <strong>Full UI + Branding</strong>
+            </p>
+            <p>
+              <strong>Tech</strong> RubyOnRails + Mongo.</p>
+            <p class="sample" data-parallax='{"y": -50}'>
+              <span class="sample-wrapper">
+                <img src="/images/samples/fitclub.png" srcset="/images/samples/fitclub@2x.png 2x">
+              </span>
+            </p>
           </div>
         </article>
       </div>
 
       <div class="work" id="gripper-w">
         <article id="gripper" class="right">
-          <h1>gripper <span class="light">client</span></h1>  
+          <h1>gripper
+            <span class="light">client</span>
+          </h1>
           <div class="content">
-            <p><strong>App UI/UX</strong></p>
-            <p><strong>Tech</strong> Future iOS &amp; Android.</p>
-            <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/gripper.png" srcset="/images/samples/gripper@2x.png 2x"></span></p>
+            <p>
+              <strong>App UI/UX</strong>
+            </p>
+            <p>
+              <strong>Tech</strong> Future iOS &amp; Android.</p>
+            <p class="sample" data-parallax='{"y": -50}'>
+              <span class="sample-wrapper">
+                <img src="/images/samples/gripper.png" srcset="/images/samples/gripper@2x.png 2x">
+              </span>
+            </p>
           </div>
         </article>
       </div>
 
 
       <div class="work" id="pepe-w">
-        <aside class="year left" data-parallax='{"y": -200, "x": 20}'>2014</aside>  
+        <aside class="year left" data-parallax='{"y": -200, "x": 20}'>2014</aside>
         <article id="pepe">
 
-          <h1>pepe <span class="light">client</span></h1>  
+          <h1>pepe
+            <span class="light">client</span>
+          </h1>
           <div class="content">
 
             <p>MVP for Latin America eCommerce startup.</p>
 
-            <p><strong>Full UI + Branding</strong></p>
-            <p><strong>Tech</strong> RubyAPI. iOS Dev + RestKit w/ CoreData + objc &amp; Swift mix.</p>
+            <p>
+              <strong>Full UI + Branding</strong>
+            </p>
+            <p>
+              <strong>Tech</strong> RubyAPI. iOS Dev + RestKit w/ CoreData + objc &amp; Swift mix.</p>
 
-            <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/pepe.png" srcset="/images/samples/pepe@2x.png 2x"></span></p>
+            <p class="sample" data-parallax='{"y": -50}'>
+              <span class="sample-wrapper">
+                <img src="/images/samples/pepe.png" srcset="/images/samples/pepe@2x.png 2x">
+              </span>
+            </p>
           </div>
         </article>
       </div>
@@ -188,15 +287,24 @@
       <div class="work" id="musa-w">
         <a href="http://facebook.com/musapizzas">
           <article id="musa">
-            <h1>musa <span class="light">client</span></h1>
+            <h1>musa
+              <span class="light">client</span>
+            </h1>
             <div class="content">
 
               <p>Pizzas Gourmet Company.</p>
 
-              <p><strong>Full UI + Branding</strong></p>
-              <p><strong>Tech</strong> Tech iOS + Android launched. More to come.</p>
+              <p>
+                <strong>Full UI + Branding</strong>
+              </p>
+              <p>
+                <strong>Tech</strong> Tech iOS + Android launched. More to come.</p>
 
-              <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/musa.png" srcset="/images/samples/musa@2x.png 2x"></span></p>
+              <p class="sample" data-parallax='{"y": -50}'>
+                <span class="sample-wrapper">
+                  <img src="/images/samples/musa.png" srcset="/images/samples/musa@2x.png 2x">
+                </span>
+              </p>
             </div>
           </article>
         </a>
@@ -205,12 +313,25 @@
 
       <div class="work" id="cointrust-w">
         <article id="cointrust" class="right">
-          <h1>cointrust <span class="light">client</span></h1>
+          <h1>cointrust
+            <span class="light">client</span>
+          </h1>
           <div class="content">
-            <p>2013. Bitcoin Startup.<br>live interactive</p>
-            <p><strong>Full UI + Branding</strong></p>
-            <p><strong>Tech</strong> <br>Cryptography + Full Bitcoin research <br>Bitcoind + Ruby integration <br>Security Strategy</p>
-            <p class="sample" data-parallax='{"y": -50}'><span class="sample-wrapper"><img src="/images/samples/cointrust.png" srcset="/images/samples/cointrust@2x.png 2x"></span></p>
+            <p>2013. Bitcoin Startup.
+              <br>live interactive</p>
+            <p>
+              <strong>Full UI + Branding</strong>
+            </p>
+            <p>
+              <strong>Tech</strong>
+              <br>Cryptography + Full Bitcoin research
+              <br>Bitcoind + Ruby integration
+              <br>Security Strategy</p>
+            <p class="sample" data-parallax='{"y": -50}'>
+              <span class="sample-wrapper">
+                <img src="/images/samples/cointrust.png" srcset="/images/samples/cointrust@2x.png 2x">
+              </span>
+            </p>
           </div>
         </article>
       </div>
@@ -221,67 +342,111 @@
     <section id="misc">
 
       <div class="group">
-        <p><strong>2015</strong></p>
-        <p><a href="https://github.com/gaston23/GMCoreDataMultipleSectionsTableVC/">GMCOREDATAMULTIPLESECTIONSTABLEVC</a><br> OPENSOURCE IOS POD</p>
+        <p>
+          <strong>2015</strong>
+        </p>
+        <p>
+          <a href="https://github.com/gaston23/GMCoreDataMultipleSectionsTableVC/">GMCOREDATAMULTIPLESECTIONSTABLEVC</a>
+          <br> OPENSOURCE IOS POD</p>
       </div>
 
       <div class="group">
-        <p><strong>2014</strong></p>
-        <p><a href="http://loovin.com">LOOVIN</a> <br>CO-FOUNDER  <br>ECOMMERCE TECH STARTUP <br>DEV iOS APP</p>
+        <p>
+          <strong>2014</strong>
+        </p>
+        <p>
+          <a href="http://loovin.com">LOOVIN</a>
+          <br>CO-FOUNDER
+          <br>ECOMMERCE TECH STARTUP
+          <br>DEV iOS APP</p>
       </div>
 
       <div class="group">
-      <p>FERMATA. UNFORGETTABLE <br>ART DESIGNER</p>
+        <p>FERMATA. UNFORGETTABLE
+          <br>ART DESIGNER</p>
       </div>
 
       <div class="group">
-        <p><strong>2013</strong></p>
-        <p><a href="https://www.youtube.com/watch?v=vcd0_gUNw6Q">BEBZZ</a> <br>CLIENT. STARTUP AD <br>MOTION GRAPHICS</p>
+        <p>
+          <strong>2013</strong>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=vcd0_gUNw6Q">BEBZZ</a>
+          <br>CLIENT. STARTUP AD
+          <br>MOTION GRAPHICS</p>
       </div>
 
       <div class="group">
-        <p><a href="https://www.youtube.com/watch?v=t4eXjqG0hn4">VISUAL APP</a> <br>CLIENT. STARTUP AD <br>DIRECTOR</p>
-        <p><a href="/ledsport.html">LEDSPORT</a> <br>FOUNDER <br>REALTIME SOFTWARE FOR SOCCER LED DISPLAYS</p> <p>FERMATA. CASTING PRODUCER</p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=t4eXjqG0hn4">VISUAL APP</a>
+          <br>CLIENT. STARTUP AD
+          <br>DIRECTOR</p>
+        <p>
+          <a href="/ledsport.html">LEDSPORT</a>
+          <br>FOUNDER
+          <br>REALTIME SOFTWARE FOR SOCCER LED DISPLAYS</p>
+        <p>FERMATA. CASTING PRODUCER</p>
       </div>
 
       <div class="group">
-        <p><strong>2012</strong></p>
-        <p><a href="https://www.youtube.com/watch?v=r4jUkyp9isQ">SMART CARGO</a> <br>CLIENT. STARTUP AD. <br>MOTION GRAPHICS</p>
+        <p>
+          <strong>2012</strong>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=r4jUkyp9isQ">SMART CARGO</a>
+          <br>CLIENT. STARTUP AD.
+          <br>MOTION GRAPHICS</p>
       </div>
 
       <div class="group">
-        <p><a href="https://www.fayerwayer.com/2012/05/un-sitio-web-lucha-contra-la-monopolizacion-de-la-fibra-optica-en-uruguay-fw-interviu/">MAS ANCHO DE BANDA 2</a> <br>URUGUAY INTERNET CAMPAIGN</p>
-        <p><a href="https://www.youtube.com/watch?v=_99nkX_x3fs">FERMATA. CELEBRATION</a> <br>ADELA RETA TEATHER <br>LIGHTING DESIGNER / BLU RAY DIRECTOR</p>
+        <p>
+          <a href="https://www.fayerwayer.com/2012/05/un-sitio-web-lucha-contra-la-monopolizacion-de-la-fibra-optica-en-uruguay-fw-interviu/">MAS ANCHO DE BANDA 2</a>
+          <br>URUGUAY INTERNET CAMPAIGN</p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=_99nkX_x3fs">FERMATA. CELEBRATION</a>
+          <br>ADELA RETA TEATHER
+          <br>LIGHTING DESIGNER / BLU RAY DIRECTOR</p>
       </div>
 
       <div class="group">
-        <p><strong>2010 </strong></p>
-        <p><a href="https://www.youtube.com/watch?v=_g0m-my3IfY">FERMATA. HITS</a> <br>MOVIE CENTER TEATHER <br>PRODUCER / LIGHTING DESIGNER / DVD DIRECTOR</p>
+        <p>
+          <strong>2010 </strong>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=_g0m-my3IfY">FERMATA. HITS</a>
+          <br>MOVIE CENTER TEATHER
+          <br>PRODUCER / LIGHTING DESIGNER / DVD DIRECTOR</p>
       </div>
 
       <div class="group">
-        <p><strong>2009 </strong></p>
-        <p><a href="https://www.youtube.com/watch?v=JrpPtfycYlg">FERMATA. MUSICA A TRAVÉS DEL TIEMPO</a> <br>MOVIE CENTER TEATHER <br>LIGHTING DESIGNER / DVD DIRECTOR</p>
+        <p>
+          <strong>2009 </strong>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=JrpPtfycYlg">FERMATA. MUSICA A TRAVÉS DEL TIEMPO</a>
+          <br>MOVIE CENTER TEATHER
+          <br>LIGHTING DESIGNER / DVD DIRECTOR</p>
       </div>
 
     </section>
 
     <footer id="footer">
-      <p><span><span class="lovee">&hearts;</span> YOU</span><br> <a href="/">GO BACK TO <span class="up">↑</span></a></p>
+      <p>
+        <span>
+          <span class="lovee">&hearts;</span> YOU</span>
+        <br>
+        <a href="/">GO BACK TO
+          <span class="up">↑</span>
+        </a>
+      </p>
     </footer>
 
-
-    <section id="social">
-      <ul>
-        <li><a href='https://www.facebook.com/gastonmorixe' class='fb symbol' title='facebook'></a></li><li><a href='http://twitter.com/gastonmorixe' class='tw symbol' title='twitterbird'></a></li><li><a href='http://instagram.com/gastonmorixe' class='ig symbol' title='instagram'></a></li><li><a href='http://github.com/gastonmorixe' class='gh symbol' title='github'></a></li>
-      </ul>  
-    </section>
   </div>
 
   <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.easing.1.3.js"></script>
   <script src="//cdn.rawgit.com/alumbo/jquery.parallax-scroll/master/js/jquery.parallax-scroll.js"></script>
 
-<!-- <script>
+  <!-- <script>
   $(document).ready(function() {
     $('img').srcset();
 
@@ -296,4 +461,5 @@
 </script> -->
 
 </body>
+
 </html>
