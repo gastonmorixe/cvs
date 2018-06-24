@@ -156,12 +156,11 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
 }
-/* 
+
 .rate {
   color: white;
-  background: blue
-    url(https://78media.tumblr.com/tumblr_lhhp5qV8Dy1qcr3d7o1_500.gif);
-} */
+  background: blue url(./images/colors.gif);
+}
 
 /*@keyframes hiSlideOut{
   to{ 
