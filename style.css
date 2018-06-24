@@ -139,7 +139,7 @@ body {
   left: 20px;
   z-index: 10;
   /* height: 80%; */
-  position: fixed;
+  position: absolute;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -148,8 +148,8 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
 }
 #content > * {
   display: flex;
@@ -495,7 +495,7 @@ body {
   font-size: 10em;
   font-weight: 200;
   font-weight: 100;
-  color: rgba(200, 200, 200, 0.25);
+  color: rgb(230, 230, 230);
   position: absolute;
   right: -0.1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -786,8 +786,8 @@ body {
 #work article .sample,
 #work article .sample .sample-wrapper,
 #work article .sample img {
-  user-select: none;
-  pointer-events: none;
+  /* user-select: none; */
+  /* pointer-events: none; */
 }
 
 #work article.right .sample {
@@ -819,7 +819,7 @@ body {
 }
 
 #stranger .sample {
-  bottom: -280px;
+  bottom: -400px;
   left: 0px;
 }
 
