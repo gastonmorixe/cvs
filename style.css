@@ -159,7 +159,6 @@ body {
 
 .rate {
   color: white;
-  background: blue url(./images/colors.gif);
 }
 
 /*@keyframes hiSlideOut{
@@ -343,7 +342,7 @@ body {
 }
 
 #hi {
-  background: rgb(230, 230, 230) url(./images/colors.gif);
+  background: rgb(0, 0, 0);
   background-size: cover;
   background-repeat: no-repeat;
 }
