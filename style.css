@@ -292,18 +292,12 @@ body {
   height: 100%;
   display: inline-block;
   color: rgb(100, 100, 100);
-  background-color: rgba(250, 250, 250, 1);
-  transition: background-color 0.4s, transform 0.4s, box-shadow 0.4s;
-  transition-timing-function: ease-in-out, cubic-bezier(0.16, 0, 0, 1),
-    ease-in-out;
-  box-shadow: 0 0px 35px rgba(0, 0, 0, 0);
+  background-color: rgba(240, 240, 240, 1);
 }
 
 #social a:hover {
-  transform: translateY(-10%);
-  background-color: #ffffff;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-  color: blue;
+  background-color: #000;
+  color: #FFF;
 }
 
 #social a:active {
