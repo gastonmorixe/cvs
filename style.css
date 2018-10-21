@@ -336,7 +336,7 @@ body {
 }
 
 #hi {
-  background: rgb(0, 0, 0);
+  background: #fff;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -345,7 +345,7 @@ body {
   left: 50%;
   /* background: black url(./images/colors.gif); */
   /* -webkit-background-clip: text; */
-  color: white;
+  color: #000;
   font-size: 4em;
   font-weight: 600;
   /*margin-left: 1em;*/
