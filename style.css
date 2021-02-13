@@ -607,9 +607,24 @@ body {
   color: #ffffff !important;
 }
 
+rgb(70, 158, 186)
 
-#work #ef {
+
+
+#work #ef, 
+#work #groove {
   color: white;
+}
+
+#work #groove-w,
+#work #ef-w,
+#work #groove-w > a,
+#work #ef-w > a,
+#work #groove-w > a:link,
+#work #ef-w > a:link,
+#work #groove-w > a:visited,
+#work #ef-w > a:visited{
+  color: white !important;
 }
 
 #work #ef .sample-wrapper img {
@@ -618,11 +633,10 @@ body {
    left: -50px;
 }
 
-#work #ef-w,
-#work #ef-w > a,
-#work #ef-w > a:link,
-#work #ef-w > a:visited {
-  color: white !important;
+#work #groove .sample-wrapper img {
+   max-width: 930px;
+   position: relative;
+   left: -50px;
 }
 
 #work #palm {
