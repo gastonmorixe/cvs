@@ -612,6 +612,12 @@ body {
   color: white;
 }
 
+#work #ef .sample-wrapper img {
+   max-width: 930px;
+   position: relative;
+   left: -50px;
+}
+
 #work #ef-w,
 #work #ef-w > a,
 #work #ef-w > a:link,
