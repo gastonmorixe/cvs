@@ -607,6 +607,18 @@ body {
   color: #ffffff !important;
 }
 
+
+#work #ef {
+  color: white;
+}
+
+#work #ef-w,
+#work #ef-w > a,
+#work #ef-w > a:link,
+#work #ef-w > a:visited {
+  color: white !important;
+}
+
 #work #palm {
   color: #0e5789;
 }
@@ -647,6 +659,10 @@ body {
 
 #work #palm-w {
   background-color: #e9eff3;
+}
+
+#work #ef-w {
+  background-color: #2579E5;
 }
 
 #work #mrthumb-w {
