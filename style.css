@@ -1078,6 +1078,8 @@ a:hover .up {
   }
 
   #work article .sample img {
+    max-width: initial;
+    left: initial;
     width: 100%;
     height: auto;
   }
