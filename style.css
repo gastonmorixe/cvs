@@ -607,10 +607,6 @@ body {
   color: #ffffff !important;
 }
 
-rgb(70, 158, 186)
-
-
-
 #work #ef, 
 #work #groove {
   color: white;
@@ -671,6 +667,10 @@ rgb(70, 158, 186)
 #work #stranger-w > a:link,
 #work #stranger-w > a:visited {
   color: #000 !important;
+}
+
+#work #groove-w {
+  background-color: rgb(70, 158, 186);
 }
 
 #work #audify-w {
